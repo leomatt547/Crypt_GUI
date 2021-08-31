@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+D:\git\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\MyForm.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+D:\git\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\MyForm.cpp(9,15): warning C4551: function call missing argument list
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Crypt_GUI.vcxproj -> D:\git\Crypt_GUI\Crypt_GUI_Sol\Debug\Crypt_GUI.exe
