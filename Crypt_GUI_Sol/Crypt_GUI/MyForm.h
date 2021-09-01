@@ -1,5 +1,4 @@
 #pragma once
-#include "Backend.h"
 #include "VCS.h"
 #include <string>
 
@@ -60,6 +59,9 @@ namespace CryptGUI {
 	private: System::Windows::Forms::TextBox^ Kunci1a;
 	private: System::Windows::Forms::Label^ Kunci_label;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ Reset;
+	private: System::Windows::Forms::Label^ kosong2;
+	private: System::Windows::Forms::Label^ kosong1;
 	private: System::Windows::Forms::TabPage^ Enigma;
 	private: void tabControl1_DrawItem(Object^ sender, DrawItemEventArgs^ e)
 	{
@@ -112,8 +114,10 @@ namespace CryptGUI {
 			this->StandardVC = (gcnew System::Windows::Forms::TabPage());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabControl2 = (gcnew System::Windows::Forms::TabControl());
-			this->Dekripsi1 = (gcnew System::Windows::Forms::TabPage());
 			this->Enkripsi1 = (gcnew System::Windows::Forms::TabPage());
+			this->kosong2 = (gcnew System::Windows::Forms::Label());
+			this->kosong1 = (gcnew System::Windows::Forms::Label());
+			this->Reset = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->Kunci1a = (gcnew System::Windows::Forms::TextBox());
 			this->Kunci_label = (gcnew System::Windows::Forms::Label());
@@ -121,6 +125,7 @@ namespace CryptGUI {
 			this->ChiperText_label = (gcnew System::Windows::Forms::Label());
 			this->PlainText_input = (gcnew System::Windows::Forms::TextBox());
 			this->PlainText_label = (gcnew System::Windows::Forms::Label());
+			this->Dekripsi1 = (gcnew System::Windows::Forms::TabPage());
 			this->FullVC = (gcnew System::Windows::Forms::TabPage());
 			this->AutoVC = (gcnew System::Windows::Forms::TabPage());
 			this->ExtendVC = (gcnew System::Windows::Forms::TabPage());
@@ -187,19 +192,13 @@ namespace CryptGUI {
 			this->tabControl2->SelectedIndex = 0;
 			this->tabControl2->Size = System::Drawing::Size(906, 587);
 			this->tabControl2->TabIndex = 4;
-			// 
-			// Dekripsi1
-			// 
-			this->Dekripsi1->Location = System::Drawing::Point(4, 29);
-			this->Dekripsi1->Name = L"Dekripsi1";
-			this->Dekripsi1->Padding = System::Windows::Forms::Padding(3);
-			this->Dekripsi1->Size = System::Drawing::Size(898, 554);
-			this->Dekripsi1->TabIndex = 1;
-			this->Dekripsi1->Text = L"Dekripsi";
-			this->Dekripsi1->UseVisualStyleBackColor = true;
+			this->tabControl2->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::tabControl2_SelectedIndexChanged);
 			// 
 			// Enkripsi1
 			// 
+			this->Enkripsi1->Controls->Add(this->kosong2);
+			this->Enkripsi1->Controls->Add(this->kosong1);
+			this->Enkripsi1->Controls->Add(this->Reset);
 			this->Enkripsi1->Controls->Add(this->button1);
 			this->Enkripsi1->Controls->Add(this->Kunci1a);
 			this->Enkripsi1->Controls->Add(this->Kunci_label);
@@ -214,6 +213,38 @@ namespace CryptGUI {
 			this->Enkripsi1->TabIndex = 0;
 			this->Enkripsi1->Text = L"Enkripsi";
 			this->Enkripsi1->UseVisualStyleBackColor = true;
+			// 
+			// kosong2
+			// 
+			this->kosong2->AutoSize = true;
+			this->kosong2->ForeColor = System::Drawing::Color::Red;
+			this->kosong2->Location = System::Drawing::Point(15, 327);
+			this->kosong2->Name = L"kosong2";
+			this->kosong2->Size = System::Drawing::Size(160, 20);
+			this->kosong2->TabIndex = 11;
+			this->kosong2->Text = L"Kunci jangan kosong!";
+			this->kosong2->Visible = false;
+			// 
+			// kosong1
+			// 
+			this->kosong1->AutoSize = true;
+			this->kosong1->ForeColor = System::Drawing::Color::Red;
+			this->kosong1->Location = System::Drawing::Point(15, 144);
+			this->kosong1->Name = L"kosong1";
+			this->kosong1->Size = System::Drawing::Size(189, 20);
+			this->kosong1->TabIndex = 10;
+			this->kosong1->Text = L"Plain Text jangan kosong!";
+			this->kosong1->Visible = false;
+			// 
+			// Reset
+			// 
+			this->Reset->Location = System::Drawing::Point(340, 144);
+			this->Reset->Name = L"Reset";
+			this->Reset->Size = System::Drawing::Size(90, 30);
+			this->Reset->TabIndex = 9;
+			this->Reset->Text = L"Reset";
+			this->Reset->UseVisualStyleBackColor = true;
+			this->Reset->Click += gcnew System::EventHandler(this, &MyForm::Reset_Click);
 			// 
 			// button1
 			// 
@@ -230,7 +261,7 @@ namespace CryptGUI {
 			this->Kunci1a->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
 			this->Kunci1a->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Kunci1a->Location = System::Drawing::Point(10, 184);
+			this->Kunci1a->Location = System::Drawing::Point(10, 208);
 			this->Kunci1a->Multiline = true;
 			this->Kunci1a->Name = L"Kunci1a";
 			this->Kunci1a->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
@@ -240,7 +271,7 @@ namespace CryptGUI {
 			// Kunci_label
 			// 
 			this->Kunci_label->AutoSize = true;
-			this->Kunci_label->Location = System::Drawing::Point(6, 161);
+			this->Kunci_label->Location = System::Drawing::Point(6, 185);
 			this->Kunci_label->Name = L"Kunci_label";
 			this->Kunci_label->Size = System::Drawing::Size(52, 20);
 			this->Kunci_label->TabIndex = 6;
@@ -253,6 +284,7 @@ namespace CryptGUI {
 			this->ChiperText_textbox->Location = System::Drawing::Point(436, 26);
 			this->ChiperText_textbox->Multiline = true;
 			this->ChiperText_textbox->Name = L"ChiperText_textbox";
+			this->ChiperText_textbox->ReadOnly = true;
 			this->ChiperText_textbox->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->ChiperText_textbox->Size = System::Drawing::Size(454, 460);
 			this->ChiperText_textbox->TabIndex = 5;
@@ -286,6 +318,16 @@ namespace CryptGUI {
 			this->PlainText_label->Size = System::Drawing::Size(81, 20);
 			this->PlainText_label->TabIndex = 2;
 			this->PlainText_label->Text = L"Plain Text:";
+			// 
+			// Dekripsi1
+			// 
+			this->Dekripsi1->Location = System::Drawing::Point(4, 29);
+			this->Dekripsi1->Name = L"Dekripsi1";
+			this->Dekripsi1->Padding = System::Windows::Forms::Padding(3);
+			this->Dekripsi1->Size = System::Drawing::Size(898, 554);
+			this->Dekripsi1->TabIndex = 1;
+			this->Dekripsi1->Text = L"Dekripsi";
+			this->Dekripsi1->UseVisualStyleBackColor = true;
 			// 
 			// FullVC
 			// 
@@ -390,14 +432,38 @@ namespace CryptGUI {
 		return context.marshal_as<std::string>(managedString);
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		VCS vcs1 = VCS();
-		vcs1.setKunci(str_std(this->Kunci1a->Text));
-		vcs1.setPlain(str_std(this->PlainText_input->Text));
-		vcs1.generateKunci();
-		this->ChiperText_textbox->Text = this->str_cs(vcs1.getKunci());
+		if (this->Kunci1a->Text == "" && this->Kunci1a->Text->Trim() == "") {
+			this->kosong2->Visible = true;
+		}
+		else {
+			this->kosong2->Visible = false;
+		}
+		if (this->PlainText_input->Text == "" || this->PlainText_input->Text->Trim() == "") {
+			this->kosong1->Visible = true;
+		}
+		else {
+			this->kosong1->Visible = false;
+		}
+		if (this->Kunci1a->Text != "" && this->Kunci1a->Text->Trim() != "" &&
+			this->PlainText_input->Text != "" && this->PlainText_input->Text->Trim() != ""){
+			this->kosong1->Visible = false;
+			this->kosong2->Visible = false;
+			VCS *vcs1 = new VCS();
+			vcs1->setKunci(str_std(this->Kunci1a->Text));
+			vcs1->setPlain(str_std(this->PlainText_input->Text));
+			//vcs1.generateKunci();
+			vcs1->VCS_Enkripsi();
+			this->ChiperText_textbox->Text = this->str_cs(vcs1->getCipher());
+		}
+	}
+		
 		//this->ChiperText_textbox->Text = strcs(objToStr((charToInt('a'))));
 		//this->ChiperText_textbox->Text = this->PlainText_input->Text;
 			//to_string(charToInt('a'));
+	private: System::Void Reset_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->PlainText_input->Text = "";
 	}
+private: System::Void tabControl2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

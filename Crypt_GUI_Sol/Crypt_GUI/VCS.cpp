@@ -10,9 +10,20 @@ VCS::VCS(){
 	cipher = "null";
 }
 
-string VCS::VCS_Enkripsi()
+void VCS::VCS_Enkripsi()
 {
-	return string();
+	this->generateKunci();
+	string plain = getPlain();
+	string kunci = getKunci();
+	string tampungan2 = "";
+	for (int i = 0; i < (int) plain.size(); i++) {
+		int p = charToInt(plain[i]);
+		int k = charToInt(kunci[i]);
+		int c = (p + k) % 26;
+		char cnya = intToChar(c);
+		tampungan2.push_back(cnya);
+	}
+	setCipher(tampungan2);
 }
 
 void VCS::generateKunci()

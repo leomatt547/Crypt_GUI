@@ -11,6 +11,6 @@ int charToInt(char x)
 
 char intToChar(int y)
 {
-	return tolower((char)y + 96);
+	return (char) tolower(y + 96);
 }
 

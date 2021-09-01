@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Backend.h"
 
 using namespace std;
 
@@ -9,7 +10,6 @@ private:
 	string plain;
 	string kunci;
 	string cipher;
-	//void generateKunci();
 public:
 	VCS();
 	void generateKunci();
@@ -19,7 +19,7 @@ public:
 	void setPlain(string);
 	void setKunci(string);
 	void setCipher(string);
-	string VCS_Enkripsi();
+	void VCS_Enkripsi();
 
 };
 
