@@ -279,6 +279,7 @@ namespace CryptGUI {
 			// 
 			// ChiperText_textbox
 			// 
+			this->ChiperText_textbox->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
 			this->ChiperText_textbox->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ChiperText_textbox->Location = System::Drawing::Point(436, 26);
@@ -448,18 +449,14 @@ namespace CryptGUI {
 			this->PlainText_input->Text != "" && this->PlainText_input->Text->Trim() != ""){
 			this->kosong1->Visible = false;
 			this->kosong2->Visible = false;
-			VCS *vcs1 = new VCS();
-			vcs1->setKunci(str_std(this->Kunci1a->Text));
-			vcs1->setPlain(str_std(this->PlainText_input->Text));
+			VCS vcs1 = VCS();
+			vcs1.setKunci(str_std(this->Kunci1a->Text));
+			vcs1.setPlain(str_std(this->PlainText_input->Text));
 			//vcs1.generateKunci();
-			vcs1->VCS_Enkripsi();
-			this->ChiperText_textbox->Text = this->str_cs(vcs1->getCipher());
+			vcs1.VCS_Enkripsi();
+			this->ChiperText_textbox->Text = str_cs(vcs1.getCipher());
 		}
 	}
-		
-		//this->ChiperText_textbox->Text = strcs(objToStr((charToInt('a'))));
-		//this->ChiperText_textbox->Text = this->PlainText_input->Text;
-			//to_string(charToInt('a'));
 	private: System::Void Reset_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->PlainText_input->Text = "";
 	}

@@ -6,11 +6,13 @@ using namespace std;
 
 int charToInt(char x)
 {
-	return (int) tolower(x) - 96;
+	//dikarenakan a = 0
+	return (int) tolower(x) - 97;
 }
 
 char intToChar(int y)
 {
-	return (char) tolower(y + 96);
+	//dikarenakan 0 = a
+	return (char) tolower(y + 97);
 }
 
