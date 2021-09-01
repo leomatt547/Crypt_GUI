@@ -2,11 +2,11 @@
 
 using namespace System;
 using namespace System::Windows::Forms;
-[STAThreadAttribute]
+[STAThread]
 
-void main(array<String^>^ args) {
+void main() {
 	Application::SetCompatibleTextRenderingDefault(false);
-	Application::EnableVisualStyles;
+	Application::EnableVisualStyles();
 	CryptGUI::MyForm frm;
 	Application::Run(% frm);
 }

@@ -1,0 +1,4 @@
+﻿  VCS.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\VCS.cpp(24,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Alphabet.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Crypt_GUI.vcxproj -> D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\x64\Debug\Crypt_GUI.exe
