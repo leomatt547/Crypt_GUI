@@ -1,17 +1,17 @@
-#include "VCS.h"
+#include "FCS.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-VCS::VCS(){
+FCS::FCS() {
 	plain = "null";
 	kunci = "null";
 	cipher = "null";
 	file = "null";
 }
 
-void VCS::VCS_Enkripsi()
+void FCS::FCS_Enkripsi()
 {
 	string plain2 = getPlain();
 	//Remove karakter non-alphabetic
@@ -19,7 +19,7 @@ void VCS::VCS_Enkripsi()
 	//Menyelaraskan kunci dengan panjang Plain text
 	string kunci = generateKunci(plain, this->getKunci());
 	string tampungan2 = "";
-	for (int i = 0; i < (int) plain.size(); i++) {
+	for (int i = 0; i < (int)plain.size(); i++) {
 		int p = charToInt(plain[i]);
 		int k = charToInt(kunci[i]);
 		int c = (p + k) % 26;
@@ -30,7 +30,7 @@ void VCS::VCS_Enkripsi()
 	setCipher(temp);
 }
 
-void VCS::VCS_Enkripsi_File()
+void FCS::FCS_Enkripsi_File()
 {
 	/*string plain2 = getPlain();
 	//Menyelaraskan kunci dengan panjang Plain text
@@ -53,7 +53,7 @@ void VCS::VCS_Enkripsi_File()
 	//setFile(tampungan2);
 }
 
-void VCS::VCS_Dekripsi() {
+void FCS::FCS_Dekripsi() {
 	string cipher2 = getCipher();
 	//Remove karakter non-alphabetic
 	string cipher = removeKarakterLain(cipher2);
@@ -74,7 +74,7 @@ void VCS::VCS_Dekripsi() {
 	setPlain(tampungan2);
 }
 
-void VCS::VCS_Dekripsi_File() {
+void FCS::FCS_Dekripsi_File() {
 	/*
 	string cipher2 = getCipher();
 	//Remove karakter non-alphabetic
@@ -100,11 +100,11 @@ void VCS::VCS_Dekripsi_File() {
 }
 
 
-string VCS::generateKunci(string _plain, string _kunci)
+string FCS::generateKunci(string _plain, string _kunci)
 {
 	string tampungan;
-	int jumlahPlain = (int) _plain.size();
-	int jumlahKunci = (int) _kunci.size();
+	int jumlahPlain = (int)_plain.size();
+	int jumlahKunci = (int)_kunci.size();
 	int faktor = ceil(jumlahPlain / jumlahKunci);
 	for (int i = 0; i <= faktor; i++) {
 		tampungan += kunci;
@@ -113,13 +113,13 @@ string VCS::generateKunci(string _plain, string _kunci)
 	return tampungan;
 }
 
-string VCS::getPlain(){return this->plain;}
-string VCS::getKunci() { return this->kunci; }
-string VCS::getCipher() { return this->cipher; }
-string VCS::getFile() { return this->file; }
+string FCS::getPlain() { return this->plain; }
+string FCS::getKunci() { return this->kunci; }
+string FCS::getCipher() { return this->cipher; }
+string FCS::getFile() { return this->file; }
 
-void VCS::setPlain(string _plain){this->plain = _plain;}
-void VCS::setKunci(string _kunci) { this->kunci = _kunci; }
-void VCS::setCipher(string _cipher) { this->cipher = _cipher; }
-void VCS::setFile(string _file) { this->file = _file; }
+void FCS::setPlain(string _plain) { this->plain = _plain; }
+void FCS::setKunci(string _kunci) { this->kunci = _kunci; }
+void FCS::setCipher(string _cipher) { this->cipher = _cipher; }
+void FCS::setFile(string _file) { this->file = _file; }
 

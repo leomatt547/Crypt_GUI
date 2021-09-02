@@ -1,10 +1,11 @@
 #pragma once
+#pragma once
 #include <string>
 #include "Backend.h"
 
 using namespace std;
 
-class VCS
+class FCS
 {
 private:
 	string plain;
@@ -13,7 +14,7 @@ private:
 	string file;
 
 public:
-	VCS();
+	FCS();
 	string generateKunci(string, string);
 	string getPlain();
 	string getKunci();
@@ -23,9 +24,8 @@ public:
 	void setKunci(string);
 	void setCipher(string);
 	void setFile(string);
-	void VCS_Enkripsi();
-	void VCS_Enkripsi_File();
-	void VCS_Dekripsi();
-	void VCS_Dekripsi_File();
+	void FCS_Enkripsi();
+	void FCS_Enkripsi_File();
+	void FCS_Dekripsi();
+	void FCS_Dekripsi_File();
 };
-
