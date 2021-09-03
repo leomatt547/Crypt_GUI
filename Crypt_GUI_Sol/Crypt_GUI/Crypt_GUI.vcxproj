@@ -124,15 +124,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AVC.cpp" />
     <ClCompile Include="Backend.cpp" />
-    <ClCompile Include="FCS.cpp" />
+    <ClCompile Include="FVC.cpp" />
     <ClCompile Include="HexReader.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="VCS.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AVC.h" />
     <ClInclude Include="Backend.h" />
-    <ClInclude Include="FCS.h" />
+    <ClInclude Include="FVC.h" />
     <ClInclude Include="HexReader.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>

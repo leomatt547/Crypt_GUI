@@ -1,17 +1,17 @@
-#include "FCS.h"
+#include "FVC.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-FCS::FCS() {
+FVC::FVC() {
 	plain = "null";
 	kunci = "null";
 	cipher = "null";
 	file = "null";
 }
 
-void FCS::FCS_Enkripsi()
+void FVC::FVC_Enkripsi()
 {
 	string plain2 = getPlain();
 	//Remove karakter non-alphabetic
@@ -30,13 +30,13 @@ void FCS::FCS_Enkripsi()
 	setCipher(temp);
 }
 
-void FCS::FCS_Enkripsi_File()
+void FVC::FVC_Enkripsi_File()
 {
 	string cipher = getCipher();
 	setFile(cipher);
 }
 
-void FCS::FCS_Dekripsi() {
+void FVC::FVC_Dekripsi() {
 	string cipher2 = getCipher();
 	//Remove karakter non-alphabetic
 	string cipher = removeKarakterLain(cipher2);
@@ -57,13 +57,13 @@ void FCS::FCS_Dekripsi() {
 	setPlain(tampungan2);
 }
 
-void FCS::FCS_Dekripsi_File() {
+void FVC::FVC_Dekripsi_File() {
 	string plain = getPlain();
 	setFile(plain);
 }
 
 
-string FCS::generateKunci(string _plain, string _kunci)
+string FVC::generateKunci(string _plain, string _kunci)
 {
 	string tampungan;
 	int jumlahPlain = (int)_plain.size();
@@ -76,13 +76,13 @@ string FCS::generateKunci(string _plain, string _kunci)
 	return tampungan;
 }
 
-string FCS::getPlain() { return this->plain; }
-string FCS::getKunci() { return this->kunci; }
-string FCS::getCipher() { return this->cipher; }
-string FCS::getFile() { return this->file; }
+string FVC::getPlain() { return this->plain; }
+string FVC::getKunci() { return this->kunci; }
+string FVC::getCipher() { return this->cipher; }
+string FVC::getFile() { return this->file; }
 
-void FCS::setPlain(string _plain) { this->plain = _plain; }
-void FCS::setKunci(string _kunci) { this->kunci = _kunci; }
-void FCS::setCipher(string _cipher) { this->cipher = _cipher; }
-void FCS::setFile(string _file) { this->file = _file; }
+void FVC::setPlain(string _plain) { this->plain = _plain; }
+void FVC::setKunci(string _kunci) { this->kunci = _kunci; }
+void FVC::setCipher(string _cipher) { this->cipher = _cipher; }
+void FVC::setFile(string _file) { this->file = _file; }
 

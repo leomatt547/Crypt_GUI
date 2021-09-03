@@ -27,7 +27,10 @@
     <ClCompile Include="HexReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FCS.cpp">
+    <ClCompile Include="FVC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AVC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,7 +47,10 @@
     <ClInclude Include="HexReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FCS.h">
+    <ClInclude Include="FVC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AVC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
