@@ -20,10 +20,10 @@ void VCS::VCS_Enkripsi()
 	string kunci = generateKunci(plain, this->getKunci());
 	string tampungan2 = "";
 	for (int i = 0; i < (int) plain.size(); i++) {
-		int p = charToInt(plain[i]);
-		int k = charToInt(kunci[i]);
+		int p = charToInt(plain[i], true);
+		int k = charToInt(kunci[i], true);
 		int c = (p + k) % 26;
-		char cnya = intToChar(c);
+		char cnya = intToChar(c, true);
 		tampungan2.push_back(cnya);
 	}
 	string temp = filterOutput(tampungan2, 5);
@@ -61,14 +61,14 @@ void VCS::VCS_Dekripsi() {
 	string kunci = generateKunci(cipher, this->getKunci());
 	string tampungan2 = "";
 	for (int i = 0; i < (int)cipher.size(); i++) {
-		int c = charToInt(cipher[i]);
-		int k = charToInt(kunci[i]);
+		int c = charToInt(cipher[i], true);
+		int k = charToInt(kunci[i], true);
 		if (c - k < 0) {
 			c += 26;
 		}
 		int p = (c - k) % 26;
 		//setCipherFile(static_cast<string>(to_string(p)));
-		char pnya = intToChar(p);
+		char pnya = intToChar(p, true);
 		tampungan2.push_back(pnya);
 	}
 	setPlain(tampungan2);

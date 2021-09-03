@@ -1007,7 +1007,7 @@ namespace CryptGUI {
 			this->button12->TabIndex = 29;
 			this->button12->Text = L"Save File";
 			this->button12->UseVisualStyleBackColor = true;
-			this->button12->Visible = false;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 			// 
 			// button13
 			// 
@@ -1017,6 +1017,7 @@ namespace CryptGUI {
 			this->button13->TabIndex = 28;
 			this->button13->Text = L"Open File ...";
 			this->button13->UseVisualStyleBackColor = true;
+			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
 			// 
 			// label25
 			// 
@@ -1035,6 +1036,7 @@ namespace CryptGUI {
 			this->button14->TabIndex = 26;
 			this->button14->Text = L"Clear Kunci";
 			this->button14->UseVisualStyleBackColor = true;
+			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
 			// 
 			// label26
 			// 
@@ -1066,6 +1068,7 @@ namespace CryptGUI {
 			this->button15->TabIndex = 23;
 			this->button15->Text = L"Reset";
 			this->button15->UseVisualStyleBackColor = true;
+			this->button15->Click += gcnew System::EventHandler(this, &MyForm::button15_Click);
 			// 
 			// button16
 			// 
@@ -1077,6 +1080,7 @@ namespace CryptGUI {
 			this->button16->TabIndex = 22;
 			this->button16->Text = L"Dekripsi";
 			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &MyForm::button16_Click);
 			// 
 			// textBox7
 			// 
@@ -1308,10 +1312,10 @@ namespace CryptGUI {
 	/*-----------------------------VCS Dekripsi---------------------------------------*/
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (this->textBox3->Text == "" || this->textBox3->Text->Trim() == "") {
-			this->kosong1->Visible = true;
+			this->label7->Visible = true;
 		}
 		else {
-			this->kosong1->Visible = false;
+			this->label7->Visible = false;
 		}
 		if (this->textBox1->Text == "" || this->textBox1->Text->Trim() == "") {
 			this->label6->Visible = true;
@@ -1363,7 +1367,7 @@ namespace CryptGUI {
 			this->textBox3->Text = str_cs(readFile(str_std(filePath)));
 		}
 	}
-	/*-----------------------------FCS Enkripsi---------------------------------------*/
+	/*-----------------------------FCS Enkripsi-------------------------------------*/
 	private: System::Void clear_label3() {
 		this->label17->Visible = false;
 		this->label18->Visible = false;
@@ -1418,6 +1422,63 @@ namespace CryptGUI {
 			String^ filePath = this->openFileDialog1->FileName;
 			saveFile(str_std(this->saveFileDialog1->FileName), str_std(this->textBox5->Text));
 			this->label15->Visible = true;
+		}
+	}
+	/*-----------------------------FCS Dekripsi--------------------------------------- */
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox9->Text == "" || this->textBox9->Text->Trim() == "") {
+			this->label27->Visible = true;
+		}
+		else {
+			this->label27->Visible = false;
+		}
+		if (this->textBox7->Text == "" || this->textBox7->Text->Trim() == "") {
+			this->label26->Visible = true;
+		}
+		else {
+			this->label26->Visible = false;
+		}
+		if (this->textBox9->Text != "" && this->textBox9->Text->Trim() != "" &&
+			this->textBox7->Text != "" && this->textBox7->Text->Trim() != "") {
+			clear_label4();
+			FCS fcsd1 = FCS();
+			fcsd1.setKunci(str_std(this->textBox7->Text));
+			fcsd1.setCipher(str_std(this->textBox9->Text));
+			fcsd1.FCS_Dekripsi();
+			this->textBox8->Text = str_cs(fcsd1.getPlain());
+			this->button12->Enabled = true;
+		}
+	}
+	private: System::Void clear_label4() {
+		this->label27->Visible = false;
+		this->label26->Visible = false;
+		this->label24->Visible = false;
+		this->label22->Visible = false;
+	}
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox7->Text = "";
+	}
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox9->Text = "";
+	}
+	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox8->Text == "" || this->textBox8->Text->Trim() == "") {
+			this->label22->Visible = true;
+		}
+		else {
+			this->label22->Visible = false;
+		}
+		if (this->saveFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK
+			&& this->textBox8->Text != "" && this->textBox8->Text->Trim() != "") {
+			String^ filePath = this->openFileDialog1->FileName;
+			saveFile(str_std(this->saveFileDialog1->FileName), str_std(this->textBox8->Text));
+			this->label24->Visible = true;
+		}
+	}
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->openFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK) {
+			String^ filePath = this->openFileDialog1->FileName;
+			this->textBox9->Text = str_cs(readFile(str_std(filePath)));
 		}
 	}
 };

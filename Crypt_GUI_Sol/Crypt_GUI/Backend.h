@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int charToInt(char);
-char intToChar(int);
+int charToInt(char, bool);
+char intToChar(int, bool);
 string removeKarakterLain(string);
 string filterOutput(string, int);
 void saveFile(string, string);

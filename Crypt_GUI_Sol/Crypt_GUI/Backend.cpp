@@ -4,16 +4,83 @@
 
 using namespace std;
 
-int charToInt(char x)
+int charToInt(char x, bool vcs)
 {
-	//dikarenakan a = 0
-    return static_cast<int>(tolower(x) - 97);
+    if (vcs) {
+        //dikarenakan a = 0
+        return static_cast<int>(tolower(x) - 97);
+    }
+    else {
+        switch (x) {
+        case 'A': case 'a': return 11;
+        case 'B': case 'b': return 23;
+        case 'C': case 'c': return 14;
+        case 'D': case 'd': return 6;
+        case 'E': case 'e': return 0;
+        case 'F': case 'f': return 2;
+        case 'G': case 'g': return 15;
+        case 'H': case 'h': return 4;
+        case 'I': case 'i': return 21;
+        case 'J': case 'j': return 7;
+        case 'K': case 'k': return 24;
+        case 'L': case 'l': return 12;
+        case 'M': case 'm': return 16;
+        case 'N': case 'n': return 8;
+        case 'O': case 'o': return 25;
+        case 'P': case 'p': return 5;
+        case 'Q': case 'q': return 22;
+        case 'R': case 'r': return 17;
+        case 'S': case 's': return 1;
+        case 'T': case 't': return 20;
+        case 'U': case 'u': return 9;
+        case 'V': case 'v': return 18;
+        case 'W': case 'w': return 13;
+        case 'X': case 'x': return 19;
+        case 'Y': case 'y': return 3;
+        case 'Z': case 'z': return 10;
+        default: return 0;
+        }
+    }
 }
 
-char intToChar(int y)
+char intToChar(int y, bool vcs)
 {
-	//dikarenakan 0 = a
-    return static_cast<char>(y + 97);
+    if (vcs) {
+        //dikarenakan 0 = a
+        return static_cast<char>(y + 97);
+    }
+    else {
+        switch (y) {
+        case 0: return 'e';
+        case 1: return 's';
+        case 2: return 'f';
+        case 3: return 'y';
+        case 4: return 'h';
+        case 5: return 'p';
+        case 6: return 'd';
+        case 7: return 'j';
+        case 8: return 'n';
+        case 9: return 'u';
+        case 10: return 'z';
+        case 11: return 'a';
+        case 12: return 'l';
+        case 13: return 'w';
+        case 14: return 'c';
+        case 15: return 'g';
+        case 16: return 'm';
+        case 17: return 'r';
+        case 18: return 'v';
+        case 19: return 'x';
+        case 20: return 't';
+        case 21: return 'i';
+        case 22: return 'q';
+        case 23: return 'b';
+        case 24: return 'k';
+        case 25: return 'o';
+        default: return 'xxxx';
+        }
+    }
+	
 }
 
 char* strToHexChar(string hex_chars) {

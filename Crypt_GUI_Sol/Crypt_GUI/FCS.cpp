@@ -20,10 +20,10 @@ void FCS::FCS_Enkripsi()
 	string kunci = generateKunci(plain, this->getKunci());
 	string tampungan2 = "";
 	for (int i = 0; i < (int)plain.size(); i++) {
-		int p = charToInt(plain[i]);
-		int k = charToInt(kunci[i]);
+		int p = charToInt(plain[i], false);
+		int k = charToInt(kunci[i], false);
 		int c = (p + k) % 26;
-		char cnya = intToChar(c);
+		char cnya = intToChar(c,false);
 		tampungan2.push_back(cnya);
 	}
 	string temp = filterOutput(tampungan2, 5);
@@ -32,25 +32,8 @@ void FCS::FCS_Enkripsi()
 
 void FCS::FCS_Enkripsi_File()
 {
-	/*string plain2 = getPlain();
-	//Menyelaraskan kunci dengan panjang Plain text
-	string kunci = generateKunci(plain, this->getKunci());
-	string tampungan2 = "";
-	/for (int i = 0; i < (int)plain.size(); i++) {
-		if (plain[i] >= 'A' && plain[i] <= 'Z') {
-			int p = charToInt(plain[i]);
-			int k = charToInt(kunci[i]);
-			int c = (p + k) % 26;
-			char cnya = intToChar(c);
-			tampungan2.push_back(toupper(cnya));
-		}
-		else {
-			tampungan2.push_back(plain[i]);
-		}
-	}*/
 	string cipher = getCipher();
 	setFile(cipher);
-	//setFile(tampungan2);
 }
 
 void FCS::FCS_Dekripsi() {
@@ -61,40 +44,20 @@ void FCS::FCS_Dekripsi() {
 	string kunci = generateKunci(cipher, this->getKunci());
 	string tampungan2 = "";
 	for (int i = 0; i < (int)cipher.size(); i++) {
-		int c = charToInt(cipher[i]);
-		int k = charToInt(kunci[i]);
+		int c = charToInt(cipher[i],false);
+		int k = charToInt(kunci[i],false);
 		if (c - k < 0) {
 			c += 26;
 		}
 		int p = (c - k) % 26;
 		//setCipherFile(static_cast<string>(to_string(p)));
-		char pnya = intToChar(p);
+		char pnya = intToChar(p,false);
 		tampungan2.push_back(pnya);
 	}
 	setPlain(tampungan2);
 }
 
 void FCS::FCS_Dekripsi_File() {
-	/*
-	string cipher2 = getCipher();
-	//Remove karakter non-alphabetic
-	string cipher = removeKarakterLain(cipher2);
-	//Menyelaraskan kunci dengan panjang Plain text
-	string kunci = generateKunci(cipher, this->getKunci());
-	string tampungan2 = "";
-	for (int i = 0; i < (int)cipher.size(); i++) {
-		int c = charToInt(cipher[i]);
-		int k = charToInt(kunci[i]);
-		if (c - k < 0) {
-			c += 26;
-		}
-		int p = (c - k) % 26;
-		//setCipherFile(static_cast<string>(to_string(p)));
-		char pnya = intToChar(p);
-		tampungan2.push_back(pnya);
-	}
-	setFile(tampungan2);
-	*/
 	string plain = getPlain();
 	setFile(plain);
 }
