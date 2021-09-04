@@ -5,6 +5,7 @@
 #include "AVC.h"
 #include "EVC.h"
 #include "PFCip.h"
+#include "AFC.h"
 
 #include <msclr\marshal_cppstd.h>
 
@@ -234,6 +235,118 @@ private: System::Windows::Forms::Label^ label79;
 private: System::Windows::Forms::TextBox^ textBox26;
 private: System::Windows::Forms::TextBox^ textBox27;
 private: System::Windows::Forms::Label^ label80;
+private: System::Windows::Forms::Label^ label81;
+private: System::Windows::Forms::TabControl^ tabControl7;
+private: System::Windows::Forms::TabPage^ tabPage9;
+private: System::Windows::Forms::Label^ label82;
+private: System::Windows::Forms::Label^ label83;
+private: System::Windows::Forms::Button^ button47;
+private: System::Windows::Forms::Button^ button48;
+private: System::Windows::Forms::Label^ label84;
+private: System::Windows::Forms::Label^ label85;
+private: System::Windows::Forms::Label^ label86;
+private: System::Windows::Forms::Button^ button50;
+private: System::Windows::Forms::Button^ button51;
+private: System::Windows::Forms::Label^ label87;
+private: System::Windows::Forms::TextBox^ textBox29;
+private: System::Windows::Forms::Label^ label88;
+private: System::Windows::Forms::TextBox^ textBox30;
+private: System::Windows::Forms::Label^ label89;
+private: System::Windows::Forms::TabPage^ tabPage10;
+private: System::Windows::Forms::Label^ label90;
+private: System::Windows::Forms::Label^ label91;
+private: System::Windows::Forms::Label^ label92;
+private: System::Windows::Forms::Button^ button52;
+private: System::Windows::Forms::Button^ button53;
+private: System::Windows::Forms::Label^ label93;
+private: System::Windows::Forms::Label^ label94;
+private: System::Windows::Forms::Label^ label95;
+private: System::Windows::Forms::Button^ button55;
+private: System::Windows::Forms::Button^ button56;
+private: System::Windows::Forms::TextBox^ textBox32;
+private: System::Windows::Forms::TextBox^ textBox33;
+private: System::Windows::Forms::Label^ label97;
+private: System::Windows::Forms::Label^ label98;
+private: System::Windows::Forms::TabControl^ tabControl8;
+private: System::Windows::Forms::TabPage^ tabPage11;
+private: System::Windows::Forms::Label^ label99;
+private: System::Windows::Forms::Label^ label100;
+private: System::Windows::Forms::Button^ button57;
+private: System::Windows::Forms::Button^ button58;
+private: System::Windows::Forms::Label^ label101;
+private: System::Windows::Forms::Button^ button59;
+private: System::Windows::Forms::Label^ label102;
+private: System::Windows::Forms::Label^ label103;
+private: System::Windows::Forms::Button^ button60;
+private: System::Windows::Forms::Button^ button61;
+private: System::Windows::Forms::TextBox^ textBox34;
+private: System::Windows::Forms::Label^ label104;
+private: System::Windows::Forms::TextBox^ textBox35;
+private: System::Windows::Forms::Label^ label105;
+private: System::Windows::Forms::TextBox^ textBox36;
+private: System::Windows::Forms::Label^ label106;
+private: System::Windows::Forms::TabPage^ tabPage12;
+private: System::Windows::Forms::Label^ label107;
+private: System::Windows::Forms::Label^ label108;
+private: System::Windows::Forms::Label^ label109;
+private: System::Windows::Forms::Button^ button62;
+private: System::Windows::Forms::Button^ button63;
+private: System::Windows::Forms::Label^ label110;
+private: System::Windows::Forms::Button^ button64;
+private: System::Windows::Forms::Label^ label111;
+private: System::Windows::Forms::Label^ label112;
+private: System::Windows::Forms::Button^ button65;
+private: System::Windows::Forms::Button^ button66;
+private: System::Windows::Forms::TextBox^ textBox37;
+private: System::Windows::Forms::Label^ label113;
+private: System::Windows::Forms::TextBox^ textBox38;
+private: System::Windows::Forms::TextBox^ textBox39;
+private: System::Windows::Forms::Label^ label114;
+private: System::Windows::Forms::Label^ label115;
+private: System::Windows::Forms::TabControl^ tabControl9;
+private: System::Windows::Forms::TabPage^ tabPage13;
+private: System::Windows::Forms::Label^ label116;
+private: System::Windows::Forms::Label^ label117;
+private: System::Windows::Forms::Button^ button67;
+private: System::Windows::Forms::Button^ button68;
+private: System::Windows::Forms::Label^ label118;
+private: System::Windows::Forms::Button^ button69;
+private: System::Windows::Forms::Label^ label119;
+private: System::Windows::Forms::Label^ label120;
+private: System::Windows::Forms::Button^ button70;
+private: System::Windows::Forms::Button^ button71;
+private: System::Windows::Forms::TextBox^ textBox40;
+private: System::Windows::Forms::Label^ label121;
+private: System::Windows::Forms::TextBox^ textBox41;
+private: System::Windows::Forms::Label^ label122;
+private: System::Windows::Forms::TextBox^ textBox42;
+private: System::Windows::Forms::Label^ label123;
+private: System::Windows::Forms::TabPage^ tabPage14;
+private: System::Windows::Forms::Label^ label124;
+private: System::Windows::Forms::Label^ label125;
+private: System::Windows::Forms::Label^ label126;
+private: System::Windows::Forms::Button^ button72;
+private: System::Windows::Forms::Button^ button73;
+private: System::Windows::Forms::Label^ label127;
+private: System::Windows::Forms::Button^ button74;
+private: System::Windows::Forms::Label^ label128;
+private: System::Windows::Forms::Label^ label129;
+private: System::Windows::Forms::Button^ button75;
+private: System::Windows::Forms::Button^ button76;
+private: System::Windows::Forms::TextBox^ textBox43;
+private: System::Windows::Forms::Label^ label130;
+private: System::Windows::Forms::TextBox^ textBox44;
+private: System::Windows::Forms::TextBox^ textBox45;
+private: System::Windows::Forms::Label^ label131;
+private: System::Windows::Forms::ComboBox^ comboBox2;
+private: System::Windows::Forms::ComboBox^ comboBox1;
+private: System::Windows::Forms::Label^ label133;
+private: System::Windows::Forms::Label^ label132;
+private: System::Windows::Forms::ComboBox^ comboBox3;
+private: System::Windows::Forms::ComboBox^ comboBox4;
+private: System::Windows::Forms::Label^ label134;
+private: System::Windows::Forms::Label^ label135;
+private: System::Windows::Forms::Label^ label136;
 	private: System::Windows::Forms::TabPage^ Enigma;
 	private: void tabControl1_DrawItem(Object^ sender, DrawItemEventArgs^ e)
 	{
@@ -432,11 +545,6 @@ private: System::Windows::Forms::Label^ label80;
 			this->textBox21 = (gcnew System::Windows::Forms::TextBox());
 			this->label63 = (gcnew System::Windows::Forms::Label());
 			this->PFC = (gcnew System::Windows::Forms::TabPage());
-			this->AC = (gcnew System::Windows::Forms::TabPage());
-			this->HC = (gcnew System::Windows::Forms::TabPage());
-			this->Enigma = (gcnew System::Windows::Forms::TabPage());
-			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
-			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->label64 = (gcnew System::Windows::Forms::Label());
 			this->tabControl6 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
@@ -473,6 +581,123 @@ private: System::Windows::Forms::Label^ label80;
 			this->textBox26 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox27 = (gcnew System::Windows::Forms::TextBox());
 			this->label80 = (gcnew System::Windows::Forms::Label());
+			this->AC = (gcnew System::Windows::Forms::TabPage());
+			this->label81 = (gcnew System::Windows::Forms::Label());
+			this->tabControl7 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->label133 = (gcnew System::Windows::Forms::Label());
+			this->label132 = (gcnew System::Windows::Forms::Label());
+			this->label82 = (gcnew System::Windows::Forms::Label());
+			this->label83 = (gcnew System::Windows::Forms::Label());
+			this->button47 = (gcnew System::Windows::Forms::Button());
+			this->button48 = (gcnew System::Windows::Forms::Button());
+			this->label84 = (gcnew System::Windows::Forms::Label());
+			this->label85 = (gcnew System::Windows::Forms::Label());
+			this->label86 = (gcnew System::Windows::Forms::Label());
+			this->button50 = (gcnew System::Windows::Forms::Button());
+			this->button51 = (gcnew System::Windows::Forms::Button());
+			this->label87 = (gcnew System::Windows::Forms::Label());
+			this->textBox29 = (gcnew System::Windows::Forms::TextBox());
+			this->label88 = (gcnew System::Windows::Forms::Label());
+			this->textBox30 = (gcnew System::Windows::Forms::TextBox());
+			this->label89 = (gcnew System::Windows::Forms::Label());
+			this->tabPage10 = (gcnew System::Windows::Forms::TabPage());
+			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox4 = (gcnew System::Windows::Forms::ComboBox());
+			this->label134 = (gcnew System::Windows::Forms::Label());
+			this->label135 = (gcnew System::Windows::Forms::Label());
+			this->label136 = (gcnew System::Windows::Forms::Label());
+			this->label90 = (gcnew System::Windows::Forms::Label());
+			this->label91 = (gcnew System::Windows::Forms::Label());
+			this->label92 = (gcnew System::Windows::Forms::Label());
+			this->button52 = (gcnew System::Windows::Forms::Button());
+			this->button53 = (gcnew System::Windows::Forms::Button());
+			this->label93 = (gcnew System::Windows::Forms::Label());
+			this->label94 = (gcnew System::Windows::Forms::Label());
+			this->label95 = (gcnew System::Windows::Forms::Label());
+			this->button55 = (gcnew System::Windows::Forms::Button());
+			this->button56 = (gcnew System::Windows::Forms::Button());
+			this->textBox32 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox33 = (gcnew System::Windows::Forms::TextBox());
+			this->label97 = (gcnew System::Windows::Forms::Label());
+			this->HC = (gcnew System::Windows::Forms::TabPage());
+			this->label98 = (gcnew System::Windows::Forms::Label());
+			this->tabControl8 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage11 = (gcnew System::Windows::Forms::TabPage());
+			this->label99 = (gcnew System::Windows::Forms::Label());
+			this->label100 = (gcnew System::Windows::Forms::Label());
+			this->button57 = (gcnew System::Windows::Forms::Button());
+			this->button58 = (gcnew System::Windows::Forms::Button());
+			this->label101 = (gcnew System::Windows::Forms::Label());
+			this->button59 = (gcnew System::Windows::Forms::Button());
+			this->label102 = (gcnew System::Windows::Forms::Label());
+			this->label103 = (gcnew System::Windows::Forms::Label());
+			this->button60 = (gcnew System::Windows::Forms::Button());
+			this->button61 = (gcnew System::Windows::Forms::Button());
+			this->textBox34 = (gcnew System::Windows::Forms::TextBox());
+			this->label104 = (gcnew System::Windows::Forms::Label());
+			this->textBox35 = (gcnew System::Windows::Forms::TextBox());
+			this->label105 = (gcnew System::Windows::Forms::Label());
+			this->textBox36 = (gcnew System::Windows::Forms::TextBox());
+			this->label106 = (gcnew System::Windows::Forms::Label());
+			this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
+			this->label107 = (gcnew System::Windows::Forms::Label());
+			this->label108 = (gcnew System::Windows::Forms::Label());
+			this->label109 = (gcnew System::Windows::Forms::Label());
+			this->button62 = (gcnew System::Windows::Forms::Button());
+			this->button63 = (gcnew System::Windows::Forms::Button());
+			this->label110 = (gcnew System::Windows::Forms::Label());
+			this->button64 = (gcnew System::Windows::Forms::Button());
+			this->label111 = (gcnew System::Windows::Forms::Label());
+			this->label112 = (gcnew System::Windows::Forms::Label());
+			this->button65 = (gcnew System::Windows::Forms::Button());
+			this->button66 = (gcnew System::Windows::Forms::Button());
+			this->textBox37 = (gcnew System::Windows::Forms::TextBox());
+			this->label113 = (gcnew System::Windows::Forms::Label());
+			this->textBox38 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox39 = (gcnew System::Windows::Forms::TextBox());
+			this->label114 = (gcnew System::Windows::Forms::Label());
+			this->Enigma = (gcnew System::Windows::Forms::TabPage());
+			this->label115 = (gcnew System::Windows::Forms::Label());
+			this->tabControl9 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
+			this->label116 = (gcnew System::Windows::Forms::Label());
+			this->label117 = (gcnew System::Windows::Forms::Label());
+			this->button67 = (gcnew System::Windows::Forms::Button());
+			this->button68 = (gcnew System::Windows::Forms::Button());
+			this->label118 = (gcnew System::Windows::Forms::Label());
+			this->button69 = (gcnew System::Windows::Forms::Button());
+			this->label119 = (gcnew System::Windows::Forms::Label());
+			this->label120 = (gcnew System::Windows::Forms::Label());
+			this->button70 = (gcnew System::Windows::Forms::Button());
+			this->button71 = (gcnew System::Windows::Forms::Button());
+			this->textBox40 = (gcnew System::Windows::Forms::TextBox());
+			this->label121 = (gcnew System::Windows::Forms::Label());
+			this->textBox41 = (gcnew System::Windows::Forms::TextBox());
+			this->label122 = (gcnew System::Windows::Forms::Label());
+			this->textBox42 = (gcnew System::Windows::Forms::TextBox());
+			this->label123 = (gcnew System::Windows::Forms::Label());
+			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
+			this->label124 = (gcnew System::Windows::Forms::Label());
+			this->label125 = (gcnew System::Windows::Forms::Label());
+			this->label126 = (gcnew System::Windows::Forms::Label());
+			this->button72 = (gcnew System::Windows::Forms::Button());
+			this->button73 = (gcnew System::Windows::Forms::Button());
+			this->label127 = (gcnew System::Windows::Forms::Label());
+			this->button74 = (gcnew System::Windows::Forms::Button());
+			this->label128 = (gcnew System::Windows::Forms::Label());
+			this->label129 = (gcnew System::Windows::Forms::Label());
+			this->button75 = (gcnew System::Windows::Forms::Button());
+			this->button76 = (gcnew System::Windows::Forms::Button());
+			this->textBox43 = (gcnew System::Windows::Forms::TextBox());
+			this->label130 = (gcnew System::Windows::Forms::Label());
+			this->textBox44 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox45 = (gcnew System::Windows::Forms::TextBox());
+			this->label131 = (gcnew System::Windows::Forms::Label());
+			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
+			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->tabControl1->SuspendLayout();
 			this->StandardVC->SuspendLayout();
 			this->tabControl2->SuspendLayout();
@@ -494,6 +719,18 @@ private: System::Windows::Forms::Label^ label80;
 			this->tabControl6->SuspendLayout();
 			this->tabPage7->SuspendLayout();
 			this->tabPage8->SuspendLayout();
+			this->AC->SuspendLayout();
+			this->tabControl7->SuspendLayout();
+			this->tabPage9->SuspendLayout();
+			this->tabPage10->SuspendLayout();
+			this->HC->SuspendLayout();
+			this->tabControl8->SuspendLayout();
+			this->tabPage11->SuspendLayout();
+			this->tabPage12->SuspendLayout();
+			this->Enigma->SuspendLayout();
+			this->tabControl9->SuspendLayout();
+			this->tabPage13->SuspendLayout();
+			this->tabPage14->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -2220,42 +2457,6 @@ private: System::Windows::Forms::Label^ label80;
 			this->PFC->Text = L"Playfair Cipher";
 			this->PFC->UseVisualStyleBackColor = true;
 			// 
-			// AC
-			// 
-			this->AC->Location = System::Drawing::Point(154, 4);
-			this->AC->Name = L"AC";
-			this->AC->Size = System::Drawing::Size(987, 635);
-			this->AC->TabIndex = 5;
-			this->AC->Text = L"Affine Cipher";
-			this->AC->UseVisualStyleBackColor = true;
-			// 
-			// HC
-			// 
-			this->HC->Location = System::Drawing::Point(154, 4);
-			this->HC->Name = L"HC";
-			this->HC->Size = System::Drawing::Size(987, 635);
-			this->HC->TabIndex = 6;
-			this->HC->Text = L"Hill Chipher";
-			this->HC->UseVisualStyleBackColor = true;
-			// 
-			// Enigma
-			// 
-			this->Enigma->Location = System::Drawing::Point(154, 4);
-			this->Enigma->Name = L"Enigma";
-			this->Enigma->Size = System::Drawing::Size(987, 635);
-			this->Enigma->TabIndex = 7;
-			this->Enigma->Text = L"Enigma Chiper";
-			this->Enigma->UseVisualStyleBackColor = true;
-			// 
-			// openFileDialog1
-			// 
-			this->openFileDialog1->FileName = L"openFileDialog1";
-			this->openFileDialog1->FileOk += gcnew System::ComponentModel::CancelEventHandler(this, &MyForm::openFileDialog1_FileOk);
-			// 
-			// saveFileDialog1
-			// 
-			this->saveFileDialog1->FileOk += gcnew System::ComponentModel::CancelEventHandler(this, &MyForm::saveFileDialog1_FileOk);
-			// 
 			// label64
 			// 
 			this->label64->AutoSize = true;
@@ -2668,6 +2869,1353 @@ private: System::Windows::Forms::Label^ label80;
 			this->label80->TabIndex = 17;
 			this->label80->Text = L"Cipher Text:";
 			// 
+			// AC
+			// 
+			this->AC->Controls->Add(this->label81);
+			this->AC->Controls->Add(this->tabControl7);
+			this->AC->Location = System::Drawing::Point(154, 4);
+			this->AC->Name = L"AC";
+			this->AC->Size = System::Drawing::Size(987, 635);
+			this->AC->TabIndex = 5;
+			this->AC->Text = L"Affine Cipher";
+			this->AC->UseVisualStyleBackColor = true;
+			// 
+			// label81
+			// 
+			this->label81->AutoSize = true;
+			this->label81->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label81->Location = System::Drawing::Point(6, 8);
+			this->label81->Name = L"label81";
+			this->label81->Size = System::Drawing::Size(195, 32);
+			this->label81->TabIndex = 13;
+			this->label81->Text = L"Affine Cipher";
+			// 
+			// tabControl7
+			// 
+			this->tabControl7->Controls->Add(this->tabPage9);
+			this->tabControl7->Controls->Add(this->tabPage10);
+			this->tabControl7->Location = System::Drawing::Point(8, 50);
+			this->tabControl7->Name = L"tabControl7";
+			this->tabControl7->SelectedIndex = 0;
+			this->tabControl7->Size = System::Drawing::Size(906, 587);
+			this->tabControl7->TabIndex = 12;
+			// 
+			// tabPage9
+			// 
+			this->tabPage9->Controls->Add(this->comboBox2);
+			this->tabPage9->Controls->Add(this->comboBox1);
+			this->tabPage9->Controls->Add(this->label133);
+			this->tabPage9->Controls->Add(this->label132);
+			this->tabPage9->Controls->Add(this->label82);
+			this->tabPage9->Controls->Add(this->label83);
+			this->tabPage9->Controls->Add(this->button47);
+			this->tabPage9->Controls->Add(this->button48);
+			this->tabPage9->Controls->Add(this->label84);
+			this->tabPage9->Controls->Add(this->label85);
+			this->tabPage9->Controls->Add(this->label86);
+			this->tabPage9->Controls->Add(this->button50);
+			this->tabPage9->Controls->Add(this->button51);
+			this->tabPage9->Controls->Add(this->label87);
+			this->tabPage9->Controls->Add(this->textBox29);
+			this->tabPage9->Controls->Add(this->label88);
+			this->tabPage9->Controls->Add(this->textBox30);
+			this->tabPage9->Controls->Add(this->label89);
+			this->tabPage9->Location = System::Drawing::Point(4, 29);
+			this->tabPage9->Name = L"tabPage9";
+			this->tabPage9->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage9->Size = System::Drawing::Size(898, 554);
+			this->tabPage9->TabIndex = 0;
+			this->tabPage9->Text = L"Enkripsi";
+			this->tabPage9->UseVisualStyleBackColor = true;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->DropDownHeight = 130;
+			this->comboBox2->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->IntegralHeight = false;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(25) {
+				L"1", L"2", L"3", L"4", L"5", L"6", L"7", L"8",
+					L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25"
+			});
+			this->comboBox2->Location = System::Drawing::Point(219, 319);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 28);
+			this->comboBox2->TabIndex = 37;
+			this->comboBox2->SelectedIndex = 0;
+			// 
+			// comboBox1
+			// 
+			this->comboBox1->DropDownHeight = 130;
+			this->comboBox1->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->IntegralHeight = false;
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
+				L"1", L"3", L"5", L"7", L"9", L"11", L"15", L"17",
+					L"19", L"21", L"23", L"25"
+			});
+			this->comboBox1->Location = System::Drawing::Point(76, 319);
+			this->comboBox1->MaxDropDownItems = 2;
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 28);
+			this->comboBox1->TabIndex = 36;
+			this->comboBox1->SelectedIndex = 0;
+			// 
+			// label133
+			// 
+			this->label133->AutoSize = true;
+			this->label133->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label133->Location = System::Drawing::Point(215, 296);
+			this->label133->Name = L"label133";
+			this->label133->Size = System::Drawing::Size(24, 20);
+			this->label133->TabIndex = 35;
+			this->label133->Text = L"b:";
+			// 
+			// label132
+			// 
+			this->label132->AutoSize = true;
+			this->label132->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label132->Location = System::Drawing::Point(72, 296);
+			this->label132->Name = L"label132";
+			this->label132->Size = System::Drawing::Size(28, 20);
+			this->label132->TabIndex = 34;
+			this->label132->Text = L"m:";
+			// 
+			// label82
+			// 
+			this->label82->AutoSize = true;
+			this->label82->ForeColor = System::Drawing::Color::Red;
+			this->label82->Location = System::Drawing::Point(435, 503);
+			this->label82->Name = L"label82";
+			this->label82->Size = System::Drawing::Size(205, 20);
+			this->label82->TabIndex = 33;
+			this->label82->Text = L"Cipher Teks jangan kosong!";
+			this->label82->Visible = false;
+			// 
+			// label83
+			// 
+			this->label83->AutoSize = true;
+			this->label83->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label83->Location = System::Drawing::Point(702, 510);
+			this->label83->Name = L"label83";
+			this->label83->Size = System::Drawing::Size(87, 20);
+			this->label83->TabIndex = 16;
+			this->label83->Text = L"File Saved!";
+			this->label83->Visible = false;
+			// 
+			// button47
+			// 
+			this->button47->Enabled = false;
+			this->button47->Location = System::Drawing::Point(795, 503);
+			this->button47->Name = L"button47";
+			this->button47->Size = System::Drawing::Size(93, 35);
+			this->button47->TabIndex = 15;
+			this->button47->Text = L"Save File";
+			this->button47->UseVisualStyleBackColor = true;
+			this->button47->Click += gcnew System::EventHandler(this, &MyForm::button47_Click);
+			// 
+			// button48
+			// 
+			this->button48->Location = System::Drawing::Point(12, 408);
+			this->button48->Name = L"button48";
+			this->button48->Size = System::Drawing::Size(113, 35);
+			this->button48->TabIndex = 14;
+			this->button48->Text = L"Open File ...";
+			this->button48->UseVisualStyleBackColor = true;
+			this->button48->Click += gcnew System::EventHandler(this, &MyForm::button48_Click);
+			// 
+			// label84
+			// 
+			this->label84->AutoSize = true;
+			this->label84->Location = System::Drawing::Point(13, 385);
+			this->label84->Name = L"label84";
+			this->label84->Size = System::Drawing::Size(89, 20);
+			this->label84->TabIndex = 13;
+			this->label84->Text = L"File Upload";
+			// 
+			// label85
+			// 
+			this->label85->AutoSize = true;
+			this->label85->ForeColor = System::Drawing::Color::Red;
+			this->label85->Location = System::Drawing::Point(12, 355);
+			this->label85->Name = L"label85";
+			this->label85->Size = System::Drawing::Size(160, 20);
+			this->label85->TabIndex = 11;
+			this->label85->Text = L"Kunci jangan kosong!";
+			this->label85->Visible = false;
+			// 
+			// label86
+			// 
+			this->label86->AutoSize = true;
+			this->label86->ForeColor = System::Drawing::Color::Red;
+			this->label86->Location = System::Drawing::Point(3, 251);
+			this->label86->Name = L"label86";
+			this->label86->Size = System::Drawing::Size(189, 20);
+			this->label86->TabIndex = 10;
+			this->label86->Text = L"Plain Text jangan kosong!";
+			this->label86->Visible = false;
+			// 
+			// button50
+			// 
+			this->button50->Location = System::Drawing::Point(333, 251);
+			this->button50->Name = L"button50";
+			this->button50->Size = System::Drawing::Size(90, 35);
+			this->button50->TabIndex = 9;
+			this->button50->Text = L"Reset";
+			this->button50->UseVisualStyleBackColor = true;
+			this->button50->Click += gcnew System::EventHandler(this, &MyForm::button50_Click);
+			// 
+			// button51
+			// 
+			this->button51->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button51->Location = System::Drawing::Point(258, 458);
+			this->button51->Name = L"button51";
+			this->button51->Size = System::Drawing::Size(171, 79);
+			this->button51->TabIndex = 8;
+			this->button51->Text = L"Enkripsi";
+			this->button51->UseVisualStyleBackColor = true;
+			this->button51->Click += gcnew System::EventHandler(this, &MyForm::button51_Click);
+			// 
+			// label87
+			// 
+			this->label87->AutoSize = true;
+			this->label87->Location = System::Drawing::Point(3, 296);
+			this->label87->Name = L"label87";
+			this->label87->Size = System::Drawing::Size(52, 20);
+			this->label87->TabIndex = 6;
+			this->label87->Text = L"Kunci:";
+			// 
+			// textBox29
+			// 
+			this->textBox29->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox29->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox29->Location = System::Drawing::Point(434, 26);
+			this->textBox29->Multiline = true;
+			this->textBox29->Name = L"textBox29";
+			this->textBox29->ReadOnly = true;
+			this->textBox29->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox29->Size = System::Drawing::Size(454, 460);
+			this->textBox29->TabIndex = 5;
+			// 
+			// label88
+			// 
+			this->label88->AutoSize = true;
+			this->label88->Location = System::Drawing::Point(430, 3);
+			this->label88->Name = L"label88";
+			this->label88->Size = System::Drawing::Size(93, 20);
+			this->label88->TabIndex = 4;
+			this->label88->Text = L"Cipher Text:";
+			// 
+			// textBox30
+			// 
+			this->textBox30->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox30->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox30->Location = System::Drawing::Point(8, 26);
+			this->textBox30->Multiline = true;
+			this->textBox30->Name = L"textBox30";
+			this->textBox30->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox30->Size = System::Drawing::Size(415, 219);
+			this->textBox30->TabIndex = 3;
+			// 
+			// label89
+			// 
+			this->label89->AutoSize = true;
+			this->label89->Location = System::Drawing::Point(4, 3);
+			this->label89->Name = L"label89";
+			this->label89->Size = System::Drawing::Size(81, 20);
+			this->label89->TabIndex = 2;
+			this->label89->Text = L"Plain Text:";
+			// 
+			// tabPage10
+			// 
+			this->tabPage10->Controls->Add(this->comboBox3);
+			this->tabPage10->Controls->Add(this->comboBox4);
+			this->tabPage10->Controls->Add(this->label134);
+			this->tabPage10->Controls->Add(this->label135);
+			this->tabPage10->Controls->Add(this->label136);
+			this->tabPage10->Controls->Add(this->label90);
+			this->tabPage10->Controls->Add(this->label91);
+			this->tabPage10->Controls->Add(this->label92);
+			this->tabPage10->Controls->Add(this->button52);
+			this->tabPage10->Controls->Add(this->button53);
+			this->tabPage10->Controls->Add(this->label93);
+			this->tabPage10->Controls->Add(this->label94);
+			this->tabPage10->Controls->Add(this->label95);
+			this->tabPage10->Controls->Add(this->button55);
+			this->tabPage10->Controls->Add(this->button56);
+			this->tabPage10->Controls->Add(this->textBox32);
+			this->tabPage10->Controls->Add(this->textBox33);
+			this->tabPage10->Controls->Add(this->label97);
+			this->tabPage10->Location = System::Drawing::Point(4, 29);
+			this->tabPage10->Name = L"tabPage10";
+			this->tabPage10->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage10->Size = System::Drawing::Size(898, 554);
+			this->tabPage10->TabIndex = 1;
+			this->tabPage10->Text = L"Dekripsi";
+			this->tabPage10->UseVisualStyleBackColor = true;
+			// 
+			// comboBox3
+			// 
+			this->comboBox3->DropDownHeight = 130;
+			this->comboBox3->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->IntegralHeight = false;
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(25) {
+				L"1", L"2", L"3", L"4", L"5", L"6", L"7", L"8",
+					L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25"
+			});
+			this->comboBox3->Location = System::Drawing::Point(681, 321);
+			this->comboBox3->Name = L"comboBox3";
+			this->comboBox3->Size = System::Drawing::Size(121, 28);
+			this->comboBox3->TabIndex = 42;
+			this->comboBox3->SelectedIndex = 0;
+			// 
+			// comboBox4
+			// 
+			this->comboBox4->DropDownHeight = 130;
+			this->comboBox4->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBox4->FormattingEnabled = true;
+			this->comboBox4->IntegralHeight = false;
+			this->comboBox4->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
+				L"1", L"3", L"5", L"7", L"9", L"11", L"15", L"17",
+					L"19", L"21", L"23", L"25"
+			});
+			this->comboBox4->Location = System::Drawing::Point(538, 321);
+			this->comboBox4->Name = L"comboBox4";
+			this->comboBox4->Size = System::Drawing::Size(121, 28);
+			this->comboBox4->TabIndex = 41;
+			this->comboBox4->SelectedIndex = 0;
+			// 
+			// label134
+			// 
+			this->label134->AutoSize = true;
+			this->label134->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label134->Location = System::Drawing::Point(677, 298);
+			this->label134->Name = L"label134";
+			this->label134->Size = System::Drawing::Size(24, 20);
+			this->label134->TabIndex = 40;
+			this->label134->Text = L"b:";
+			// 
+			// label135
+			// 
+			this->label135->AutoSize = true;
+			this->label135->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label135->Location = System::Drawing::Point(534, 298);
+			this->label135->Name = L"label135";
+			this->label135->Size = System::Drawing::Size(28, 20);
+			this->label135->TabIndex = 39;
+			this->label135->Text = L"m:";
+			// 
+			// label136
+			// 
+			this->label136->AutoSize = true;
+			this->label136->Location = System::Drawing::Point(469, 298);
+			this->label136->Name = L"label136";
+			this->label136->Size = System::Drawing::Size(52, 20);
+			this->label136->TabIndex = 38;
+			this->label136->Text = L"Kunci:";
+			// 
+			// label90
+			// 
+			this->label90->AutoSize = true;
+			this->label90->ForeColor = System::Drawing::Color::Red;
+			this->label90->Location = System::Drawing::Point(6, 506);
+			this->label90->Name = L"label90";
+			this->label90->Size = System::Drawing::Size(193, 20);
+			this->label90->TabIndex = 32;
+			this->label90->Text = L"Plain Teks jangan kosong!";
+			this->label90->Visible = false;
+			// 
+			// label91
+			// 
+			this->label91->AutoSize = true;
+			this->label91->Location = System::Drawing::Point(2, 7);
+			this->label91->Name = L"label91";
+			this->label91->Size = System::Drawing::Size(81, 20);
+			this->label91->TabIndex = 31;
+			this->label91->Text = L"Plain Text:";
+			// 
+			// label92
+			// 
+			this->label92->AutoSize = true;
+			this->label92->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label92->Location = System::Drawing::Point(271, 506);
+			this->label92->Name = L"label92";
+			this->label92->Size = System::Drawing::Size(87, 20);
+			this->label92->TabIndex = 30;
+			this->label92->Text = L"File Saved!";
+			this->label92->Visible = false;
+			// 
+			// button52
+			// 
+			this->button52->Location = System::Drawing::Point(363, 499);
+			this->button52->Name = L"button52";
+			this->button52->Size = System::Drawing::Size(93, 35);
+			this->button52->TabIndex = 29;
+			this->button52->Text = L"Save File";
+			this->button52->UseVisualStyleBackColor = true;
+			this->button52->Click += gcnew System::EventHandler(this, &MyForm::button52_Click);
+			// 
+			// button53
+			// 
+			this->button53->Location = System::Drawing::Point(473, 412);
+			this->button53->Name = L"button53";
+			this->button53->Size = System::Drawing::Size(113, 35);
+			this->button53->TabIndex = 28;
+			this->button53->Text = L"Open File ...";
+			this->button53->UseVisualStyleBackColor = true;
+			this->button53->Click += gcnew System::EventHandler(this, &MyForm::button53_Click);
+			// 
+			// label93
+			// 
+			this->label93->AutoSize = true;
+			this->label93->Location = System::Drawing::Point(474, 389);
+			this->label93->Name = L"label93";
+			this->label93->Size = System::Drawing::Size(89, 20);
+			this->label93->TabIndex = 27;
+			this->label93->Text = L"File Upload";
+			// 
+			// label94
+			// 
+			this->label94->AutoSize = true;
+			this->label94->ForeColor = System::Drawing::Color::Red;
+			this->label94->Location = System::Drawing::Point(474, 356);
+			this->label94->Name = L"label94";
+			this->label94->Size = System::Drawing::Size(160, 20);
+			this->label94->TabIndex = 25;
+			this->label94->Text = L"Kunci jangan kosong!";
+			this->label94->Visible = false;
+			// 
+			// label95
+			// 
+			this->label95->AutoSize = true;
+			this->label95->ForeColor = System::Drawing::Color::Red;
+			this->label95->Location = System::Drawing::Point(469, 256);
+			this->label95->Name = L"label95";
+			this->label95->Size = System::Drawing::Size(201, 20);
+			this->label95->TabIndex = 24;
+			this->label95->Text = L"Cipher Text jangan kosong!";
+			this->label95->Visible = false;
+			// 
+			// button55
+			// 
+			this->button55->Location = System::Drawing::Point(798, 256);
+			this->button55->Name = L"button55";
+			this->button55->Size = System::Drawing::Size(90, 35);
+			this->button55->TabIndex = 23;
+			this->button55->Text = L"Reset";
+			this->button55->UseVisualStyleBackColor = true;
+			this->button55->Click += gcnew System::EventHandler(this, &MyForm::button55_Click);
+			// 
+			// button56
+			// 
+			this->button56->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button56->Location = System::Drawing::Point(717, 455);
+			this->button56->Name = L"button56";
+			this->button56->Size = System::Drawing::Size(171, 79);
+			this->button56->TabIndex = 22;
+			this->button56->Text = L"Dekripsi";
+			this->button56->UseVisualStyleBackColor = true;
+			this->button56->Click += gcnew System::EventHandler(this, &MyForm::button56_Click);
+			// 
+			// textBox32
+			// 
+			this->textBox32->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox32->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox32->Location = System::Drawing::Point(6, 30);
+			this->textBox32->Multiline = true;
+			this->textBox32->Name = L"textBox32";
+			this->textBox32->ReadOnly = true;
+			this->textBox32->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox32->Size = System::Drawing::Size(453, 463);
+			this->textBox32->TabIndex = 19;
+			// 
+			// textBox33
+			// 
+			this->textBox33->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox33->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox33->Location = System::Drawing::Point(469, 30);
+			this->textBox33->Multiline = true;
+			this->textBox33->Name = L"textBox33";
+			this->textBox33->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox33->Size = System::Drawing::Size(419, 220);
+			this->textBox33->TabIndex = 18;
+			// 
+			// label97
+			// 
+			this->label97->AutoSize = true;
+			this->label97->Location = System::Drawing::Point(465, 7);
+			this->label97->Name = L"label97";
+			this->label97->Size = System::Drawing::Size(93, 20);
+			this->label97->TabIndex = 17;
+			this->label97->Text = L"Cipher Text:";
+			// 
+			// HC
+			// 
+			this->HC->Controls->Add(this->label98);
+			this->HC->Controls->Add(this->tabControl8);
+			this->HC->Location = System::Drawing::Point(154, 4);
+			this->HC->Name = L"HC";
+			this->HC->Size = System::Drawing::Size(987, 635);
+			this->HC->TabIndex = 6;
+			this->HC->Text = L"Hill Chipher";
+			this->HC->UseVisualStyleBackColor = true;
+			// 
+			// label98
+			// 
+			this->label98->AutoSize = true;
+			this->label98->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label98->Location = System::Drawing::Point(7, 8);
+			this->label98->Name = L"label98";
+			this->label98->Size = System::Drawing::Size(160, 32);
+			this->label98->TabIndex = 15;
+			this->label98->Text = L"Hill Cipher";
+			// 
+			// tabControl8
+			// 
+			this->tabControl8->Controls->Add(this->tabPage11);
+			this->tabControl8->Controls->Add(this->tabPage12);
+			this->tabControl8->Location = System::Drawing::Point(9, 50);
+			this->tabControl8->Name = L"tabControl8";
+			this->tabControl8->SelectedIndex = 0;
+			this->tabControl8->Size = System::Drawing::Size(906, 587);
+			this->tabControl8->TabIndex = 14;
+			// 
+			// tabPage11
+			// 
+			this->tabPage11->Controls->Add(this->label99);
+			this->tabPage11->Controls->Add(this->label100);
+			this->tabPage11->Controls->Add(this->button57);
+			this->tabPage11->Controls->Add(this->button58);
+			this->tabPage11->Controls->Add(this->label101);
+			this->tabPage11->Controls->Add(this->button59);
+			this->tabPage11->Controls->Add(this->label102);
+			this->tabPage11->Controls->Add(this->label103);
+			this->tabPage11->Controls->Add(this->button60);
+			this->tabPage11->Controls->Add(this->button61);
+			this->tabPage11->Controls->Add(this->textBox34);
+			this->tabPage11->Controls->Add(this->label104);
+			this->tabPage11->Controls->Add(this->textBox35);
+			this->tabPage11->Controls->Add(this->label105);
+			this->tabPage11->Controls->Add(this->textBox36);
+			this->tabPage11->Controls->Add(this->label106);
+			this->tabPage11->Location = System::Drawing::Point(4, 29);
+			this->tabPage11->Name = L"tabPage11";
+			this->tabPage11->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage11->Size = System::Drawing::Size(898, 554);
+			this->tabPage11->TabIndex = 0;
+			this->tabPage11->Text = L"Enkripsi";
+			this->tabPage11->UseVisualStyleBackColor = true;
+			// 
+			// label99
+			// 
+			this->label99->AutoSize = true;
+			this->label99->ForeColor = System::Drawing::Color::Red;
+			this->label99->Location = System::Drawing::Point(435, 503);
+			this->label99->Name = L"label99";
+			this->label99->Size = System::Drawing::Size(205, 20);
+			this->label99->TabIndex = 33;
+			this->label99->Text = L"Cipher Teks jangan kosong!";
+			this->label99->Visible = false;
+			// 
+			// label100
+			// 
+			this->label100->AutoSize = true;
+			this->label100->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label100->Location = System::Drawing::Point(702, 510);
+			this->label100->Name = L"label100";
+			this->label100->Size = System::Drawing::Size(87, 20);
+			this->label100->TabIndex = 16;
+			this->label100->Text = L"File Saved!";
+			this->label100->Visible = false;
+			// 
+			// button57
+			// 
+			this->button57->Enabled = false;
+			this->button57->Location = System::Drawing::Point(795, 503);
+			this->button57->Name = L"button57";
+			this->button57->Size = System::Drawing::Size(93, 35);
+			this->button57->TabIndex = 15;
+			this->button57->Text = L"Save File";
+			this->button57->UseVisualStyleBackColor = true;
+			this->button57->Click += gcnew System::EventHandler(this, &MyForm::button57_Click);
+			// 
+			// button58
+			// 
+			this->button58->Location = System::Drawing::Point(12, 408);
+			this->button58->Name = L"button58";
+			this->button58->Size = System::Drawing::Size(113, 35);
+			this->button58->TabIndex = 14;
+			this->button58->Text = L"Open File ...";
+			this->button58->UseVisualStyleBackColor = true;
+			this->button58->Click += gcnew System::EventHandler(this, &MyForm::button58_Click);
+			// 
+			// label101
+			// 
+			this->label101->AutoSize = true;
+			this->label101->Location = System::Drawing::Point(13, 385);
+			this->label101->Name = L"label101";
+			this->label101->Size = System::Drawing::Size(89, 20);
+			this->label101->TabIndex = 13;
+			this->label101->Text = L"File Upload";
+			// 
+			// button59
+			// 
+			this->button59->Location = System::Drawing::Point(315, 327);
+			this->button59->Name = L"button59";
+			this->button59->Size = System::Drawing::Size(113, 36);
+			this->button59->TabIndex = 12;
+			this->button59->Text = L"Clear Kunci";
+			this->button59->UseVisualStyleBackColor = true;
+			this->button59->Click += gcnew System::EventHandler(this, &MyForm::button59_Click);
+			// 
+			// label102
+			// 
+			this->label102->AutoSize = true;
+			this->label102->ForeColor = System::Drawing::Color::Red;
+			this->label102->Location = System::Drawing::Point(13, 327);
+			this->label102->Name = L"label102";
+			this->label102->Size = System::Drawing::Size(160, 20);
+			this->label102->TabIndex = 11;
+			this->label102->Text = L"Kunci jangan kosong!";
+			this->label102->Visible = false;
+			// 
+			// label103
+			// 
+			this->label103->AutoSize = true;
+			this->label103->ForeColor = System::Drawing::Color::Red;
+			this->label103->Location = System::Drawing::Point(13, 144);
+			this->label103->Name = L"label103";
+			this->label103->Size = System::Drawing::Size(189, 20);
+			this->label103->TabIndex = 10;
+			this->label103->Text = L"Plain Text jangan kosong!";
+			this->label103->Visible = false;
+			// 
+			// button60
+			// 
+			this->button60->Location = System::Drawing::Point(338, 144);
+			this->button60->Name = L"button60";
+			this->button60->Size = System::Drawing::Size(90, 35);
+			this->button60->TabIndex = 9;
+			this->button60->Text = L"Reset";
+			this->button60->UseVisualStyleBackColor = true;
+			this->button60->Click += gcnew System::EventHandler(this, &MyForm::button60_Click);
+			// 
+			// button61
+			// 
+			this->button61->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button61->Location = System::Drawing::Point(258, 458);
+			this->button61->Name = L"button61";
+			this->button61->Size = System::Drawing::Size(171, 79);
+			this->button61->TabIndex = 8;
+			this->button61->Text = L"Enkripsi";
+			this->button61->UseVisualStyleBackColor = true;
+			this->button61->Click += gcnew System::EventHandler(this, &MyForm::button61_Click);
+			// 
+			// textBox34
+			// 
+			this->textBox34->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox34->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox34->Location = System::Drawing::Point(8, 208);
+			this->textBox34->Multiline = true;
+			this->textBox34->Name = L"textBox34";
+			this->textBox34->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox34->Size = System::Drawing::Size(420, 112);
+			this->textBox34->TabIndex = 7;
+			// 
+			// label104
+			// 
+			this->label104->AutoSize = true;
+			this->label104->Location = System::Drawing::Point(4, 185);
+			this->label104->Name = L"label104";
+			this->label104->Size = System::Drawing::Size(52, 20);
+			this->label104->TabIndex = 6;
+			this->label104->Text = L"Kunci:";
+			// 
+			// textBox35
+			// 
+			this->textBox35->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox35->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox35->Location = System::Drawing::Point(434, 26);
+			this->textBox35->Multiline = true;
+			this->textBox35->Name = L"textBox35";
+			this->textBox35->ReadOnly = true;
+			this->textBox35->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox35->Size = System::Drawing::Size(454, 460);
+			this->textBox35->TabIndex = 5;
+			// 
+			// label105
+			// 
+			this->label105->AutoSize = true;
+			this->label105->Location = System::Drawing::Point(430, 3);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(93, 20);
+			this->label105->TabIndex = 4;
+			this->label105->Text = L"Cipher Text:";
+			// 
+			// textBox36
+			// 
+			this->textBox36->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox36->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox36->Location = System::Drawing::Point(8, 26);
+			this->textBox36->Multiline = true;
+			this->textBox36->Name = L"textBox36";
+			this->textBox36->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox36->Size = System::Drawing::Size(420, 112);
+			this->textBox36->TabIndex = 3;
+			// 
+			// label106
+			// 
+			this->label106->AutoSize = true;
+			this->label106->Location = System::Drawing::Point(4, 3);
+			this->label106->Name = L"label106";
+			this->label106->Size = System::Drawing::Size(81, 20);
+			this->label106->TabIndex = 2;
+			this->label106->Text = L"Plain Text:";
+			// 
+			// tabPage12
+			// 
+			this->tabPage12->Controls->Add(this->label107);
+			this->tabPage12->Controls->Add(this->label108);
+			this->tabPage12->Controls->Add(this->label109);
+			this->tabPage12->Controls->Add(this->button62);
+			this->tabPage12->Controls->Add(this->button63);
+			this->tabPage12->Controls->Add(this->label110);
+			this->tabPage12->Controls->Add(this->button64);
+			this->tabPage12->Controls->Add(this->label111);
+			this->tabPage12->Controls->Add(this->label112);
+			this->tabPage12->Controls->Add(this->button65);
+			this->tabPage12->Controls->Add(this->button66);
+			this->tabPage12->Controls->Add(this->textBox37);
+			this->tabPage12->Controls->Add(this->label113);
+			this->tabPage12->Controls->Add(this->textBox38);
+			this->tabPage12->Controls->Add(this->textBox39);
+			this->tabPage12->Controls->Add(this->label114);
+			this->tabPage12->Location = System::Drawing::Point(4, 29);
+			this->tabPage12->Name = L"tabPage12";
+			this->tabPage12->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage12->Size = System::Drawing::Size(898, 554);
+			this->tabPage12->TabIndex = 1;
+			this->tabPage12->Text = L"Dekripsi";
+			this->tabPage12->UseVisualStyleBackColor = true;
+			// 
+			// label107
+			// 
+			this->label107->AutoSize = true;
+			this->label107->ForeColor = System::Drawing::Color::Red;
+			this->label107->Location = System::Drawing::Point(6, 506);
+			this->label107->Name = L"label107";
+			this->label107->Size = System::Drawing::Size(193, 20);
+			this->label107->TabIndex = 32;
+			this->label107->Text = L"Plain Teks jangan kosong!";
+			this->label107->Visible = false;
+			// 
+			// label108
+			// 
+			this->label108->AutoSize = true;
+			this->label108->Location = System::Drawing::Point(2, 7);
+			this->label108->Name = L"label108";
+			this->label108->Size = System::Drawing::Size(81, 20);
+			this->label108->TabIndex = 31;
+			this->label108->Text = L"Plain Text:";
+			// 
+			// label109
+			// 
+			this->label109->AutoSize = true;
+			this->label109->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label109->Location = System::Drawing::Point(271, 506);
+			this->label109->Name = L"label109";
+			this->label109->Size = System::Drawing::Size(87, 20);
+			this->label109->TabIndex = 30;
+			this->label109->Text = L"File Saved!";
+			this->label109->Visible = false;
+			// 
+			// button62
+			// 
+			this->button62->Location = System::Drawing::Point(363, 499);
+			this->button62->Name = L"button62";
+			this->button62->Size = System::Drawing::Size(93, 35);
+			this->button62->TabIndex = 29;
+			this->button62->Text = L"Save File";
+			this->button62->UseVisualStyleBackColor = true;
+			this->button62->Click += gcnew System::EventHandler(this, &MyForm::button62_Click);
+			// 
+			// button63
+			// 
+			this->button63->Location = System::Drawing::Point(473, 412);
+			this->button63->Name = L"button63";
+			this->button63->Size = System::Drawing::Size(113, 35);
+			this->button63->TabIndex = 28;
+			this->button63->Text = L"Open File ...";
+			this->button63->UseVisualStyleBackColor = true;
+			this->button63->Click += gcnew System::EventHandler(this, &MyForm::button63_Click);
+			// 
+			// label110
+			// 
+			this->label110->AutoSize = true;
+			this->label110->Location = System::Drawing::Point(474, 389);
+			this->label110->Name = L"label110";
+			this->label110->Size = System::Drawing::Size(89, 20);
+			this->label110->TabIndex = 27;
+			this->label110->Text = L"File Upload";
+			// 
+			// button64
+			// 
+			this->button64->Location = System::Drawing::Point(776, 331);
+			this->button64->Name = L"button64";
+			this->button64->Size = System::Drawing::Size(113, 36);
+			this->button64->TabIndex = 26;
+			this->button64->Text = L"Clear Kunci";
+			this->button64->UseVisualStyleBackColor = true;
+			this->button64->Click += gcnew System::EventHandler(this, &MyForm::button64_Click);
+			// 
+			// label111
+			// 
+			this->label111->AutoSize = true;
+			this->label111->ForeColor = System::Drawing::Color::Red;
+			this->label111->Location = System::Drawing::Point(474, 331);
+			this->label111->Name = L"label111";
+			this->label111->Size = System::Drawing::Size(160, 20);
+			this->label111->TabIndex = 25;
+			this->label111->Text = L"Kunci jangan kosong!";
+			this->label111->Visible = false;
+			// 
+			// label112
+			// 
+			this->label112->AutoSize = true;
+			this->label112->ForeColor = System::Drawing::Color::Red;
+			this->label112->Location = System::Drawing::Point(474, 148);
+			this->label112->Name = L"label112";
+			this->label112->Size = System::Drawing::Size(201, 20);
+			this->label112->TabIndex = 24;
+			this->label112->Text = L"Cipher Text jangan kosong!";
+			this->label112->Visible = false;
+			// 
+			// button65
+			// 
+			this->button65->Location = System::Drawing::Point(799, 148);
+			this->button65->Name = L"button65";
+			this->button65->Size = System::Drawing::Size(90, 35);
+			this->button65->TabIndex = 23;
+			this->button65->Text = L"Reset";
+			this->button65->UseVisualStyleBackColor = true;
+			this->button65->Click += gcnew System::EventHandler(this, &MyForm::button65_Click);
+			// 
+			// button66
+			// 
+			this->button66->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button66->Location = System::Drawing::Point(717, 455);
+			this->button66->Name = L"button66";
+			this->button66->Size = System::Drawing::Size(171, 79);
+			this->button66->TabIndex = 22;
+			this->button66->Text = L"Dekripsi";
+			this->button66->UseVisualStyleBackColor = true;
+			this->button66->Click += gcnew System::EventHandler(this, &MyForm::button66_Click);
+			// 
+			// textBox37
+			// 
+			this->textBox37->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox37->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox37->Location = System::Drawing::Point(469, 212);
+			this->textBox37->Multiline = true;
+			this->textBox37->Name = L"textBox37";
+			this->textBox37->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox37->Size = System::Drawing::Size(420, 112);
+			this->textBox37->TabIndex = 21;
+			// 
+			// label113
+			// 
+			this->label113->AutoSize = true;
+			this->label113->Location = System::Drawing::Point(465, 189);
+			this->label113->Name = L"label113";
+			this->label113->Size = System::Drawing::Size(52, 20);
+			this->label113->TabIndex = 20;
+			this->label113->Text = L"Kunci:";
+			// 
+			// textBox38
+			// 
+			this->textBox38->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox38->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox38->Location = System::Drawing::Point(6, 30);
+			this->textBox38->Multiline = true;
+			this->textBox38->Name = L"textBox38";
+			this->textBox38->ReadOnly = true;
+			this->textBox38->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox38->Size = System::Drawing::Size(453, 463);
+			this->textBox38->TabIndex = 19;
+			// 
+			// textBox39
+			// 
+			this->textBox39->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox39->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox39->Location = System::Drawing::Point(469, 30);
+			this->textBox39->Multiline = true;
+			this->textBox39->Name = L"textBox39";
+			this->textBox39->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox39->Size = System::Drawing::Size(420, 112);
+			this->textBox39->TabIndex = 18;
+			// 
+			// label114
+			// 
+			this->label114->AutoSize = true;
+			this->label114->Location = System::Drawing::Point(465, 7);
+			this->label114->Name = L"label114";
+			this->label114->Size = System::Drawing::Size(93, 20);
+			this->label114->TabIndex = 17;
+			this->label114->Text = L"Cipher Text:";
+			// 
+			// Enigma
+			// 
+			this->Enigma->Controls->Add(this->label115);
+			this->Enigma->Controls->Add(this->tabControl9);
+			this->Enigma->Location = System::Drawing::Point(154, 4);
+			this->Enigma->Name = L"Enigma";
+			this->Enigma->Size = System::Drawing::Size(987, 635);
+			this->Enigma->TabIndex = 7;
+			this->Enigma->Text = L"Enigma Chiper";
+			this->Enigma->UseVisualStyleBackColor = true;
+			// 
+			// label115
+			// 
+			this->label115->AutoSize = true;
+			this->label115->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label115->Location = System::Drawing::Point(7, 8);
+			this->label115->Name = L"label115";
+			this->label115->Size = System::Drawing::Size(219, 32);
+			this->label115->TabIndex = 17;
+			this->label115->Text = L"Enigma Cipher";
+			// 
+			// tabControl9
+			// 
+			this->tabControl9->Controls->Add(this->tabPage13);
+			this->tabControl9->Controls->Add(this->tabPage14);
+			this->tabControl9->Location = System::Drawing::Point(9, 50);
+			this->tabControl9->Name = L"tabControl9";
+			this->tabControl9->SelectedIndex = 0;
+			this->tabControl9->Size = System::Drawing::Size(906, 587);
+			this->tabControl9->TabIndex = 16;
+			// 
+			// tabPage13
+			// 
+			this->tabPage13->Controls->Add(this->label116);
+			this->tabPage13->Controls->Add(this->label117);
+			this->tabPage13->Controls->Add(this->button67);
+			this->tabPage13->Controls->Add(this->button68);
+			this->tabPage13->Controls->Add(this->label118);
+			this->tabPage13->Controls->Add(this->button69);
+			this->tabPage13->Controls->Add(this->label119);
+			this->tabPage13->Controls->Add(this->label120);
+			this->tabPage13->Controls->Add(this->button70);
+			this->tabPage13->Controls->Add(this->button71);
+			this->tabPage13->Controls->Add(this->textBox40);
+			this->tabPage13->Controls->Add(this->label121);
+			this->tabPage13->Controls->Add(this->textBox41);
+			this->tabPage13->Controls->Add(this->label122);
+			this->tabPage13->Controls->Add(this->textBox42);
+			this->tabPage13->Controls->Add(this->label123);
+			this->tabPage13->Location = System::Drawing::Point(4, 29);
+			this->tabPage13->Name = L"tabPage13";
+			this->tabPage13->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage13->Size = System::Drawing::Size(898, 554);
+			this->tabPage13->TabIndex = 0;
+			this->tabPage13->Text = L"Enkripsi";
+			this->tabPage13->UseVisualStyleBackColor = true;
+			// 
+			// label116
+			// 
+			this->label116->AutoSize = true;
+			this->label116->ForeColor = System::Drawing::Color::Red;
+			this->label116->Location = System::Drawing::Point(435, 503);
+			this->label116->Name = L"label116";
+			this->label116->Size = System::Drawing::Size(205, 20);
+			this->label116->TabIndex = 33;
+			this->label116->Text = L"Cipher Teks jangan kosong!";
+			this->label116->Visible = false;
+			// 
+			// label117
+			// 
+			this->label117->AutoSize = true;
+			this->label117->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label117->Location = System::Drawing::Point(702, 510);
+			this->label117->Name = L"label117";
+			this->label117->Size = System::Drawing::Size(87, 20);
+			this->label117->TabIndex = 16;
+			this->label117->Text = L"File Saved!";
+			this->label117->Visible = false;
+			// 
+			// button67
+			// 
+			this->button67->Enabled = false;
+			this->button67->Location = System::Drawing::Point(795, 503);
+			this->button67->Name = L"button67";
+			this->button67->Size = System::Drawing::Size(93, 35);
+			this->button67->TabIndex = 15;
+			this->button67->Text = L"Save File";
+			this->button67->UseVisualStyleBackColor = true;
+			this->button67->Click += gcnew System::EventHandler(this, &MyForm::button67_Click);
+			// 
+			// button68
+			// 
+			this->button68->Location = System::Drawing::Point(12, 408);
+			this->button68->Name = L"button68";
+			this->button68->Size = System::Drawing::Size(113, 35);
+			this->button68->TabIndex = 14;
+			this->button68->Text = L"Open File ...";
+			this->button68->UseVisualStyleBackColor = true;
+			this->button68->Click += gcnew System::EventHandler(this, &MyForm::button68_Click);
+			// 
+			// label118
+			// 
+			this->label118->AutoSize = true;
+			this->label118->Location = System::Drawing::Point(13, 385);
+			this->label118->Name = L"label118";
+			this->label118->Size = System::Drawing::Size(89, 20);
+			this->label118->TabIndex = 13;
+			this->label118->Text = L"File Upload";
+			// 
+			// button69
+			// 
+			this->button69->Location = System::Drawing::Point(315, 327);
+			this->button69->Name = L"button69";
+			this->button69->Size = System::Drawing::Size(113, 36);
+			this->button69->TabIndex = 12;
+			this->button69->Text = L"Clear Kunci";
+			this->button69->UseVisualStyleBackColor = true;
+			this->button69->Click += gcnew System::EventHandler(this, &MyForm::button69_Click);
+			// 
+			// label119
+			// 
+			this->label119->AutoSize = true;
+			this->label119->ForeColor = System::Drawing::Color::Red;
+			this->label119->Location = System::Drawing::Point(13, 327);
+			this->label119->Name = L"label119";
+			this->label119->Size = System::Drawing::Size(160, 20);
+			this->label119->TabIndex = 11;
+			this->label119->Text = L"Kunci jangan kosong!";
+			this->label119->Visible = false;
+			// 
+			// label120
+			// 
+			this->label120->AutoSize = true;
+			this->label120->ForeColor = System::Drawing::Color::Red;
+			this->label120->Location = System::Drawing::Point(13, 144);
+			this->label120->Name = L"label120";
+			this->label120->Size = System::Drawing::Size(189, 20);
+			this->label120->TabIndex = 10;
+			this->label120->Text = L"Plain Text jangan kosong!";
+			this->label120->Visible = false;
+			// 
+			// button70
+			// 
+			this->button70->Location = System::Drawing::Point(338, 144);
+			this->button70->Name = L"button70";
+			this->button70->Size = System::Drawing::Size(90, 35);
+			this->button70->TabIndex = 9;
+			this->button70->Text = L"Reset";
+			this->button70->UseVisualStyleBackColor = true;
+			this->button70->Click += gcnew System::EventHandler(this, &MyForm::button70_Click);
+			// 
+			// button71
+			// 
+			this->button71->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button71->Location = System::Drawing::Point(258, 458);
+			this->button71->Name = L"button71";
+			this->button71->Size = System::Drawing::Size(171, 79);
+			this->button71->TabIndex = 8;
+			this->button71->Text = L"Enkripsi";
+			this->button71->UseVisualStyleBackColor = true;
+			this->button71->Click += gcnew System::EventHandler(this, &MyForm::button71_Click);
+			// 
+			// textBox40
+			// 
+			this->textBox40->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox40->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox40->Location = System::Drawing::Point(8, 208);
+			this->textBox40->Multiline = true;
+			this->textBox40->Name = L"textBox40";
+			this->textBox40->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox40->Size = System::Drawing::Size(420, 112);
+			this->textBox40->TabIndex = 7;
+			// 
+			// label121
+			// 
+			this->label121->AutoSize = true;
+			this->label121->Location = System::Drawing::Point(4, 185);
+			this->label121->Name = L"label121";
+			this->label121->Size = System::Drawing::Size(52, 20);
+			this->label121->TabIndex = 6;
+			this->label121->Text = L"Kunci:";
+			// 
+			// textBox41
+			// 
+			this->textBox41->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox41->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox41->Location = System::Drawing::Point(434, 26);
+			this->textBox41->Multiline = true;
+			this->textBox41->Name = L"textBox41";
+			this->textBox41->ReadOnly = true;
+			this->textBox41->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox41->Size = System::Drawing::Size(454, 460);
+			this->textBox41->TabIndex = 5;
+			// 
+			// label122
+			// 
+			this->label122->AutoSize = true;
+			this->label122->Location = System::Drawing::Point(430, 3);
+			this->label122->Name = L"label122";
+			this->label122->Size = System::Drawing::Size(93, 20);
+			this->label122->TabIndex = 4;
+			this->label122->Text = L"Cipher Text:";
+			// 
+			// textBox42
+			// 
+			this->textBox42->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox42->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox42->Location = System::Drawing::Point(8, 26);
+			this->textBox42->Multiline = true;
+			this->textBox42->Name = L"textBox42";
+			this->textBox42->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox42->Size = System::Drawing::Size(420, 112);
+			this->textBox42->TabIndex = 3;
+			// 
+			// label123
+			// 
+			this->label123->AutoSize = true;
+			this->label123->Location = System::Drawing::Point(4, 3);
+			this->label123->Name = L"label123";
+			this->label123->Size = System::Drawing::Size(81, 20);
+			this->label123->TabIndex = 2;
+			this->label123->Text = L"Plain Text:";
+			// 
+			// tabPage14
+			// 
+			this->tabPage14->Controls->Add(this->label124);
+			this->tabPage14->Controls->Add(this->label125);
+			this->tabPage14->Controls->Add(this->label126);
+			this->tabPage14->Controls->Add(this->button72);
+			this->tabPage14->Controls->Add(this->button73);
+			this->tabPage14->Controls->Add(this->label127);
+			this->tabPage14->Controls->Add(this->button74);
+			this->tabPage14->Controls->Add(this->label128);
+			this->tabPage14->Controls->Add(this->label129);
+			this->tabPage14->Controls->Add(this->button75);
+			this->tabPage14->Controls->Add(this->button76);
+			this->tabPage14->Controls->Add(this->textBox43);
+			this->tabPage14->Controls->Add(this->label130);
+			this->tabPage14->Controls->Add(this->textBox44);
+			this->tabPage14->Controls->Add(this->textBox45);
+			this->tabPage14->Controls->Add(this->label131);
+			this->tabPage14->Location = System::Drawing::Point(4, 29);
+			this->tabPage14->Name = L"tabPage14";
+			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage14->Size = System::Drawing::Size(898, 554);
+			this->tabPage14->TabIndex = 1;
+			this->tabPage14->Text = L"Dekripsi";
+			this->tabPage14->UseVisualStyleBackColor = true;
+			// 
+			// label124
+			// 
+			this->label124->AutoSize = true;
+			this->label124->ForeColor = System::Drawing::Color::Red;
+			this->label124->Location = System::Drawing::Point(6, 506);
+			this->label124->Name = L"label124";
+			this->label124->Size = System::Drawing::Size(193, 20);
+			this->label124->TabIndex = 32;
+			this->label124->Text = L"Plain Teks jangan kosong!";
+			this->label124->Visible = false;
+			// 
+			// label125
+			// 
+			this->label125->AutoSize = true;
+			this->label125->Location = System::Drawing::Point(2, 7);
+			this->label125->Name = L"label125";
+			this->label125->Size = System::Drawing::Size(81, 20);
+			this->label125->TabIndex = 31;
+			this->label125->Text = L"Plain Text:";
+			// 
+			// label126
+			// 
+			this->label126->AutoSize = true;
+			this->label126->ForeColor = System::Drawing::Color::DarkGreen;
+			this->label126->Location = System::Drawing::Point(271, 506);
+			this->label126->Name = L"label126";
+			this->label126->Size = System::Drawing::Size(87, 20);
+			this->label126->TabIndex = 30;
+			this->label126->Text = L"File Saved!";
+			this->label126->Visible = false;
+			// 
+			// button72
+			// 
+			this->button72->Location = System::Drawing::Point(363, 499);
+			this->button72->Name = L"button72";
+			this->button72->Size = System::Drawing::Size(93, 35);
+			this->button72->TabIndex = 29;
+			this->button72->Text = L"Save File";
+			this->button72->UseVisualStyleBackColor = true;
+			this->button72->Click += gcnew System::EventHandler(this, &MyForm::button72_Click);
+			// 
+			// button73
+			// 
+			this->button73->Location = System::Drawing::Point(473, 412);
+			this->button73->Name = L"button73";
+			this->button73->Size = System::Drawing::Size(113, 35);
+			this->button73->TabIndex = 28;
+			this->button73->Text = L"Open File ...";
+			this->button73->UseVisualStyleBackColor = true;
+			this->button73->Click += gcnew System::EventHandler(this, &MyForm::button73_Click);
+			// 
+			// label127
+			// 
+			this->label127->AutoSize = true;
+			this->label127->Location = System::Drawing::Point(474, 389);
+			this->label127->Name = L"label127";
+			this->label127->Size = System::Drawing::Size(89, 20);
+			this->label127->TabIndex = 27;
+			this->label127->Text = L"File Upload";
+			// 
+			// button74
+			// 
+			this->button74->Location = System::Drawing::Point(776, 331);
+			this->button74->Name = L"button74";
+			this->button74->Size = System::Drawing::Size(113, 36);
+			this->button74->TabIndex = 26;
+			this->button74->Text = L"Clear Kunci";
+			this->button74->UseVisualStyleBackColor = true;
+			this->button74->Click += gcnew System::EventHandler(this, &MyForm::button74_Click);
+			// 
+			// label128
+			// 
+			this->label128->AutoSize = true;
+			this->label128->ForeColor = System::Drawing::Color::Red;
+			this->label128->Location = System::Drawing::Point(474, 331);
+			this->label128->Name = L"label128";
+			this->label128->Size = System::Drawing::Size(160, 20);
+			this->label128->TabIndex = 25;
+			this->label128->Text = L"Kunci jangan kosong!";
+			this->label128->Visible = false;
+			// 
+			// label129
+			// 
+			this->label129->AutoSize = true;
+			this->label129->ForeColor = System::Drawing::Color::Red;
+			this->label129->Location = System::Drawing::Point(474, 148);
+			this->label129->Name = L"label129";
+			this->label129->Size = System::Drawing::Size(201, 20);
+			this->label129->TabIndex = 24;
+			this->label129->Text = L"Cipher Text jangan kosong!";
+			this->label129->Visible = false;
+			// 
+			// button75
+			// 
+			this->button75->Location = System::Drawing::Point(799, 148);
+			this->button75->Name = L"button75";
+			this->button75->Size = System::Drawing::Size(90, 35);
+			this->button75->TabIndex = 23;
+			this->button75->Text = L"Reset";
+			this->button75->UseVisualStyleBackColor = true;
+			this->button75->Click += gcnew System::EventHandler(this, &MyForm::button75_Click);
+			// 
+			// button76
+			// 
+			this->button76->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button76->Location = System::Drawing::Point(717, 455);
+			this->button76->Name = L"button76";
+			this->button76->Size = System::Drawing::Size(171, 79);
+			this->button76->TabIndex = 22;
+			this->button76->Text = L"Dekripsi";
+			this->button76->UseVisualStyleBackColor = true;
+			this->button76->Click += gcnew System::EventHandler(this, &MyForm::button76_Click);
+			// 
+			// textBox43
+			// 
+			this->textBox43->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox43->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox43->Location = System::Drawing::Point(469, 212);
+			this->textBox43->Multiline = true;
+			this->textBox43->Name = L"textBox43";
+			this->textBox43->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox43->Size = System::Drawing::Size(420, 112);
+			this->textBox43->TabIndex = 21;
+			// 
+			// label130
+			// 
+			this->label130->AutoSize = true;
+			this->label130->Location = System::Drawing::Point(465, 189);
+			this->label130->Name = L"label130";
+			this->label130->Size = System::Drawing::Size(52, 20);
+			this->label130->TabIndex = 20;
+			this->label130->Text = L"Kunci:";
+			// 
+			// textBox44
+			// 
+			this->textBox44->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox44->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox44->Location = System::Drawing::Point(6, 30);
+			this->textBox44->Multiline = true;
+			this->textBox44->Name = L"textBox44";
+			this->textBox44->ReadOnly = true;
+			this->textBox44->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox44->Size = System::Drawing::Size(453, 463);
+			this->textBox44->TabIndex = 19;
+			// 
+			// textBox45
+			// 
+			this->textBox45->CharacterCasing = System::Windows::Forms::CharacterCasing::Upper;
+			this->textBox45->Font = (gcnew System::Drawing::Font(L"Consolas", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox45->Location = System::Drawing::Point(469, 30);
+			this->textBox45->Multiline = true;
+			this->textBox45->Name = L"textBox45";
+			this->textBox45->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox45->Size = System::Drawing::Size(420, 112);
+			this->textBox45->TabIndex = 18;
+			// 
+			// label131
+			// 
+			this->label131->AutoSize = true;
+			this->label131->Location = System::Drawing::Point(465, 7);
+			this->label131->Name = L"label131";
+			this->label131->Size = System::Drawing::Size(93, 20);
+			this->label131->TabIndex = 17;
+			this->label131->Text = L"Cipher Text:";
+			// 
+			// openFileDialog1
+			// 
+			this->openFileDialog1->FileName = L"openFileDialog1";
+			this->openFileDialog1->FileOk += gcnew System::ComponentModel::CancelEventHandler(this, &MyForm::openFileDialog1_FileOk);
+			// 
+			// saveFileDialog1
+			// 
+			this->saveFileDialog1->FileOk += gcnew System::ComponentModel::CancelEventHandler(this, &MyForm::saveFileDialog1_FileOk);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -2714,6 +4262,27 @@ private: System::Windows::Forms::Label^ label80;
 			this->tabPage7->PerformLayout();
 			this->tabPage8->ResumeLayout(false);
 			this->tabPage8->PerformLayout();
+			this->AC->ResumeLayout(false);
+			this->AC->PerformLayout();
+			this->tabControl7->ResumeLayout(false);
+			this->tabPage9->ResumeLayout(false);
+			this->tabPage9->PerformLayout();
+			this->tabPage10->ResumeLayout(false);
+			this->tabPage10->PerformLayout();
+			this->HC->ResumeLayout(false);
+			this->HC->PerformLayout();
+			this->tabControl8->ResumeLayout(false);
+			this->tabPage11->ResumeLayout(false);
+			this->tabPage11->PerformLayout();
+			this->tabPage12->ResumeLayout(false);
+			this->tabPage12->PerformLayout();
+			this->Enigma->ResumeLayout(false);
+			this->Enigma->PerformLayout();
+			this->tabControl9->ResumeLayout(false);
+			this->tabPage13->ResumeLayout(false);
+			this->tabPage13->PerformLayout();
+			this->tabPage14->ResumeLayout(false);
+			this->tabPage14->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -3312,5 +4881,172 @@ private: System::Windows::Forms::Label^ label80;
 			this->textBox27->Text = str_cs(readFile(str_std(filePath)));
 		}
 	}
+	/*-------------------------Affine Cipher Enkripsi------------------------------*/
+	private: System::Void clear_label11() {
+		this->label86->Visible = false;
+		this->label85->Visible = false;
+		this->label82->Visible = false;
+		this->label83->Visible = false;
+	}
+	private: System::Void button50_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox30->Text = "";
+	}
+	private: System::Void button48_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->openFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK) {
+			String^ filePath = this->openFileDialog1->FileName;
+			this->textBox30->Text = str_cs(readFile(str_std(filePath)));
+		}
+	}
+	private: System::Void button51_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox30->Text == "" || this->textBox30->Text->Trim() == "") {
+			this->label86->Visible = true;
+		}
+		else {
+			this->label86->Visible = false;
+		}
+		if (this->comboBox1->SelectedItem->ToString() == "") {
+			this->label85->Visible = true;
+		}
+		else {
+			this->label85->Visible = false;
+		}
+		if (this->comboBox2->SelectedItem->ToString() == "") {
+			this->label85->Visible = true;
+		}
+		else {
+			this->label85->Visible = false;
+		}
+		if (this->comboBox1->SelectedItem->ToString() != "" && this->comboBox2->SelectedItem->ToString() != "" &&
+			this->textBox30->Text != "" && this->textBox30->Text->Trim() != "") {
+			clear_label11();
+			AFC afc1 = AFC();
+			afc1.setKunciM(str_std(this->comboBox1->SelectedItem->ToString()));
+			afc1.setKunciB(str_std(this->comboBox2->SelectedItem->ToString()));
+			afc1.setPlain(str_std(this->textBox30->Text));
+			afc1.AFC_Enkripsi();
+			this->textBox29->Text = str_cs(afc1.getCipher());
+			this->button47->Enabled = true;
+		}
+	}
+	private: System::Void button47_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox29->Text == "" || this->textBox29->Text->Trim() == "") {
+			this->label82->Visible = true;
+		}
+		else {
+			this->label82->Visible = false;
+		}
+		if (this->saveFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK
+			&& this->textBox29->Text != "" && this->textBox29->Text->Trim() != "") {
+			String^ filePath = this->openFileDialog1->FileName;
+			saveFile(str_std(this->saveFileDialog1->FileName), str_std(this->textBox29->Text));
+			this->label83->Visible = true;
+		}
+	}
+	/*-------------------------Affine Cipher Dekripsi------------------------------------*/
+	private: System::Void button56_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox33->Text == "" || this->textBox33->Text->Trim() == "") {
+			this->label95->Visible = true;
+		}
+		else {
+			this->label95->Visible = false;
+		}
+		if (this->comboBox4->SelectedItem->ToString() == "") {
+			this->label94->Visible = true;
+		}
+		else {
+			this->label94->Visible = false;
+		}
+		if (this->comboBox3->SelectedItem->ToString() == "") {
+			this->label94->Visible = true;
+		}
+		else {
+			this->label94->Visible = false;
+		}
+		if (this->textBox33->Text != "" && this->textBox33->Text->Trim() != "" &&
+			this->comboBox4->SelectedItem->ToString() != "" && this->comboBox3->SelectedItem->ToString() != "") {
+			clear_label12();
+			AFC afcd1 = AFC();
+			afcd1.setKunciM(str_std(this->comboBox4->SelectedItem->ToString()));
+			afcd1.setKunciB(str_std(this->comboBox3->SelectedItem->ToString()));
+			afcd1.setCipher(str_std(this->textBox33->Text));
+			afcd1.AFC_Dekripsi();
+			this->textBox32->Text = str_cs(afcd1.getPlain());
+			//this->textBox32->Text = str_cs(afd1.getCipher());
+			this->button52->Enabled = true;
+		}
+	}
+	private: System::Void clear_label12() {
+		this->label95->Visible = false;
+		this->label94->Visible = false;
+		this->label90->Visible = false;
+		this->label92->Visible = false;
+	}
+	private: System::Void button55_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->textBox33->Text = "";
+	}
+	private: System::Void button52_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->textBox32->Text == "" || this->textBox32->Text->Trim() == "") {
+			this->label90->Visible = true;
+		}
+		else {
+			this->label90->Visible = false;
+		}
+		if (this->saveFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK
+			&& this->textBox32->Text != "" && this->textBox32->Text->Trim() != "") {
+			String^ filePath = this->openFileDialog1->FileName;
+			saveFile(str_std(this->saveFileDialog1->FileName), str_std(this->textBox32->Text));
+			this->label92->Visible = true;
+		}
+	}
+	private: System::Void button53_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (this->openFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK) {
+			String^ filePath = this->openFileDialog1->FileName;
+			this->textBox33->Text = str_cs(readFile(str_std(filePath)));
+		}
+	}
+
+
+
+
+private: System::Void button60_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button59_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button58_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button61_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button57_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button65_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button64_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button63_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button66_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button62_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button70_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button69_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button68_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button71_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button67_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button75_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button74_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button73_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button76_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button72_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
