@@ -10,6 +10,8 @@ using namespace std;
 
 int charToInt(char, bool);
 char intToChar(int, bool);
+int charToIntEVC(char);
+char intToCharEVC(int);
 string removeKarakterLain(string);
 string filterOutput(string, int);
 void saveFile(string, string);

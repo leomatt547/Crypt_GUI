@@ -82,7 +82,7 @@ string FVC::getCipher() { return this->cipher; }
 string FVC::getFile() { return this->file; }
 
 void FVC::setPlain(string _plain) { this->plain = _plain; }
-void FVC::setKunci(string _kunci) { this->kunci = _kunci; }
+void FVC::setKunci(string _kunci) { this->kunci = removeKarakterLain(_kunci); }
 void FVC::setCipher(string _cipher) { this->cipher = _cipher; }
 void FVC::setFile(string _file) { this->file = _file; }
 

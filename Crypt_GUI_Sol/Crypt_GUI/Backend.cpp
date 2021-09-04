@@ -4,6 +4,14 @@
 
 using namespace std;
 
+int charToIntEVC(char x) {
+    return static_cast<int>(x);
+}
+
+char intToCharEVC(int y) {
+    return static_cast<char>(y);
+}
+
 int charToInt(char x, bool vcs)
 {
     if (vcs) {

@@ -1,10 +1,11 @@
 #pragma once
 #include <string>
 #include "Backend.h"
+#include "HexReader.h"
 
 using namespace std;
 
-class AVC
+class EVC
 {
 private:
 	string plain;
@@ -13,7 +14,7 @@ private:
 	string file;
 
 public:
-	AVC();
+	EVC();
 	string generateKunci(string, string);
 	string getPlain();
 	string getKunci();
@@ -23,8 +24,8 @@ public:
 	void setKunci(string);
 	void setCipher(string);
 	void setFile(string);
-	void AVC_Enkripsi();
-	void AVC_Enkripsi_File();
-	void AVC_Dekripsi();
-	void AVC_Dekripsi_File();
+	void EVC_Enkripsi();
+	void EVC_Enkripsi_File();
+	void EVC_Dekripsi();
+	void EVC_Dekripsi_File();
 };

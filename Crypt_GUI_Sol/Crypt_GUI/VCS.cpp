@@ -119,7 +119,7 @@ string VCS::getCipher() { return this->cipher; }
 string VCS::getFile() { return this->file; }
 
 void VCS::setPlain(string _plain){this->plain = _plain;}
-void VCS::setKunci(string _kunci) { this->kunci = _kunci; }
+void VCS::setKunci(string _kunci) { this->kunci = removeKarakterLain(_kunci); }
 void VCS::setCipher(string _cipher) { this->cipher = _cipher; }
 void VCS::setFile(string _file) { this->file = _file; }
 

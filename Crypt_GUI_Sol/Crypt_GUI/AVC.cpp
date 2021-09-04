@@ -77,6 +77,6 @@ string AVC::getCipher() { return this->cipher; }
 string AVC::getFile() { return this->file; }
 
 void AVC::setPlain(string _plain) { this->plain = _plain; }
-void AVC::setKunci(string _kunci) { this->kunci = _kunci; }
+void AVC::setKunci(string _kunci) { this->kunci = removeKarakterLain(_kunci); }
 void AVC::setCipher(string _cipher) { this->cipher = _cipher; }
 void AVC::setFile(string _file) { this->file = _file; }
