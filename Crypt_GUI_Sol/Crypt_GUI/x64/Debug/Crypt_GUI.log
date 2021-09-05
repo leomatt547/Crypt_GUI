@@ -1,3 +1,5 @@
-﻿  MyForm.cpp
+﻿  ECip.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(243): warning C4715: 'ECip::ctop': not all control paths return a value
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(211): warning C4715: 'ECip::ptoc': not all control paths return a value
   AFC.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   Crypt_GUI.vcxproj -> D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\x64\Debug\Crypt_GUI.exe

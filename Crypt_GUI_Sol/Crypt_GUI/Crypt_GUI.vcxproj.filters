@@ -42,6 +42,12 @@
     <ClCompile Include="AFC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HCip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ECip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -69,6 +75,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HCip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ECip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

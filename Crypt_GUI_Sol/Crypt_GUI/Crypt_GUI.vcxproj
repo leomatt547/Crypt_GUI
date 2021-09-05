@@ -127,8 +127,10 @@
     <ClCompile Include="AFC.cpp" />
     <ClCompile Include="AVC.cpp" />
     <ClCompile Include="Backend.cpp" />
+    <ClCompile Include="ECip.cpp" />
     <ClCompile Include="EVC.cpp" />
     <ClCompile Include="FVC.cpp" />
+    <ClCompile Include="HCip.cpp" />
     <ClCompile Include="HexReader.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="PFCip.cpp" />
@@ -138,8 +140,10 @@
     <ClInclude Include="AFC.h" />
     <ClInclude Include="AVC.h" />
     <ClInclude Include="Backend.h" />
+    <ClInclude Include="ECip.h" />
     <ClInclude Include="EVC.h" />
     <ClInclude Include="FVC.h" />
+    <ClInclude Include="HCip.h" />
     <ClInclude Include="HexReader.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
