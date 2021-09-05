@@ -349,6 +349,7 @@ private: System::Windows::Forms::ComboBox^ comboBox4;
 private: System::Windows::Forms::Label^ label134;
 private: System::Windows::Forms::Label^ label135;
 private: System::Windows::Forms::Label^ label136;
+private: System::Windows::Forms::Label^ label96;
 	private: System::Windows::Forms::TabPage^ Enigma;
 	private: void tabControl1_DrawItem(Object^ sender, DrawItemEventArgs^ e)
 	{
@@ -684,6 +685,7 @@ private: System::Windows::Forms::Label^ label136;
 			this->label131 = (gcnew System::Windows::Forms::Label());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
+			this->label96 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->StandardVC->SuspendLayout();
 			this->tabControl2->SuspendLayout();
@@ -2929,6 +2931,8 @@ private: System::Windows::Forms::Label^ label136;
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(121, 28);
 			this->comboBox2->TabIndex = 37;
+			this->comboBox2->SelectedItem = nullptr;
+			this->comboBox2->SelectedText = "--select--";
 			// 
 			// comboBox1
 			// 
@@ -2945,6 +2949,8 @@ private: System::Windows::Forms::Label^ label136;
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 28);
 			this->comboBox1->TabIndex = 36;
+			this->comboBox1->SelectedItem = nullptr;
+			this->comboBox1->SelectedText = "--select--";
 			// 
 			// label133
 			// 
@@ -3158,6 +3164,8 @@ private: System::Windows::Forms::Label^ label136;
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(121, 28);
 			this->comboBox3->TabIndex = 42;
+			this->comboBox3->SelectedItem = nullptr;
+			this->comboBox3->SelectedText = "--select--";
 			// 
 			// comboBox4
 			// 
@@ -3173,6 +3181,8 @@ private: System::Windows::Forms::Label^ label136;
 			this->comboBox4->Name = L"comboBox4";
 			this->comboBox4->Size = System::Drawing::Size(121, 28);
 			this->comboBox4->TabIndex = 41;
+			this->comboBox4->SelectedItem = nullptr;
+			this->comboBox4->SelectedText = "--select--";
 			// 
 			// label134
 			// 
@@ -4014,11 +4024,23 @@ private: System::Windows::Forms::Label^ label136;
 			// 
 			this->saveFileDialog1->FileOk += gcnew System::ComponentModel::CancelEventHandler(this, &MyForm::saveFileDialog1_FileOk);
 			// 
+			// label96
+			// 
+			this->label96->AutoSize = true;
+			this->label96->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label96->Location = System::Drawing::Point(359, 649);
+			this->label96->Name = L"label96";
+			this->label96->Size = System::Drawing::Size(575, 32);
+			this->label96->TabIndex = 6;
+			this->label96->Text = L"Dibuat Oleh: Leonard Matheus/13519215";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1147, 646);
+			this->ClientSize = System::Drawing::Size(1147, 690);
+			this->Controls->Add(this->label96);
 			this->Controls->Add(this->tabControl1);
 			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->Name = L"MyForm";
@@ -4082,6 +4104,7 @@ private: System::Windows::Forms::Label^ label136;
 			this->tabPage14->ResumeLayout(false);
 			this->tabPage14->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 
