@@ -14,8 +14,6 @@ EVC::EVC() {
 void EVC::EVC_Enkripsi()
 {
 	string plain2 = getPlain();
-	//Remove karakter non-alphabetic
-	//string plain = removeKarakterLain(plain2);
 	//Menyelaraskan kunci dengan panjang Plain text
 	string kunci = generateKunci(plain, this->getKunci());
 	string tampungan2 = "";
@@ -38,8 +36,6 @@ void EVC::EVC_Enkripsi_File()
 
 void EVC::EVC_Dekripsi() {
 	string cipher2 = getCipher();
-	//Remove karakter non-alphabetic
-	//string cipher = removeKarakterLain(cipher2);
 	//Menyelaraskan kunci dengan panjang Plain text
 	string kunci = generateKunci(cipher, this->getKunci());
 	string tampungan2 = "";

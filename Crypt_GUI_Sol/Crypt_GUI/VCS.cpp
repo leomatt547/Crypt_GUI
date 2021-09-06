@@ -34,7 +34,6 @@ void VCS::VCS_Enkripsi_File()
 {
 	string cipher = getCipher();
 	setFile(cipher);
-	//setFile(tampungan2);
 }
 
 void VCS::VCS_Dekripsi() {
