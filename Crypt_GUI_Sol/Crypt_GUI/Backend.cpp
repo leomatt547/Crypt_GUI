@@ -85,26 +85,9 @@ char intToChar(int y, bool vcs)
         case 23: return 'b';
         case 24: return 'k';
         case 25: return 'o';
-        default: return 'xxxx';
+        default: return 'x';
         }
     }
-	
-}
-
-char* strToHexChar(string hex_chars) {
-
-    istringstream hex_chars_stream(hex_chars);
-    vector<unsigned char> bytes;
-
-    unsigned int c;
-    while (hex_chars_stream >> std::hex >> c)
-    {
-        bytes.push_back(c);
-    }
-    for (int i = 0; i < bytes.size(); i++) {
-        cout << bytes.at(i) << endl;
-    }
-    return reinterpret_cast<char*>(bytes.data());
 }
 
 void saveFile(string filename, string _hex) {
@@ -132,7 +115,7 @@ string readFile(string filename) {
 
 string removeKarakterLain(string s)
 {
-    for (int i = 0; i < s.size(); i++) {
+    for (int unsigned i = 0; i < s.size(); i++) {
         if (s[i] < 'A' || s[i] > 'Z' &&
             s[i] < 'a' || s[i] > 'z')
         {
@@ -147,7 +130,7 @@ string filterOutput(string str, int _jarak)
 {
     string s1 = "";
     int iterator = 0;
-    for (int i = 0; i < str.length(); i++)
+    for (int unsigned i = 0; i < str.length(); i++)
     {
         if (iterator < _jarak-1) {
             s1 = s1 + str[i];

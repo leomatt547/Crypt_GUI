@@ -28,7 +28,7 @@ int PFCip::getIndex(vector<char> v, int K)
 
 pair<int, int> PFCip::letakHuruf(vector<vector<char>> m, char c) {
 	pair<int, int> index;
-	for (int i = 0; i < m.size(); i++) {
+	for (unsigned int i = 0; i < m.size(); i++) {
 		if (getIndex(m.at(i), c) != -1) {
 			index.second = getIndex(m.at(i), c);
 			index.first = i;
@@ -52,7 +52,7 @@ void PFCip::PFCip_Enkripsi()
 	string plain2 = getPlain();
 	//Remove karakter non-alphabetic
 	string plain = removeKarakterLain(plain2);
-	for (int j = 0; j < plain.size(); j++) {
+	for (unsigned int j = 0; j < plain.size(); j++) {
 		if (plain[j] == 'J' || plain[j] == 'j')
 		{
 			plain.erase(j, 1);
@@ -60,8 +60,8 @@ void PFCip::PFCip_Enkripsi()
 		}
 	}
 	//setting plain text nya
-	int i = 0;
-	while (i < plain.size()) {
+	unsigned int i = 0;
+	while ( i < plain.size()) {
 		if (plain[i] == plain[i + 1]) {
 			plain.insert((i + 1), 1, 'X');
 		}
@@ -72,7 +72,7 @@ void PFCip::PFCip_Enkripsi()
 	}
 	//Proses enkripsi
 	string cipher;
-	int k = 0;
+	unsigned int k = 0;
 	while (k < plain.size()) {
 		pair<int, int> huruf1, huruf2;
 		huruf1 = letakHuruf(v3, plain[k]);
@@ -121,7 +121,7 @@ void PFCip::PFCip_Dekripsi() {
 	string cipher = getCipher();
 	//Remove karakter non-alphabetic
 	cipher = removeKarakterLain(cipher);
-	for (int j = 0; j < cipher.size(); j++) {
+	for (unsigned int j = 0; j < cipher.size(); j++) {
 		if (cipher[j] == 'J' || cipher[j] == 'j')
 		{
 			cipher.erase(j, 1);
@@ -130,7 +130,7 @@ void PFCip::PFCip_Dekripsi() {
 	}
 	//Proses dekripsi
 	string plain;
-	int k = 0;
+	unsigned int k = 0;
 	while (k < cipher.size()) {
 		pair<int, int> huruf1, huruf2;
 		huruf1 = letakHuruf(v3, cipher[k]);
@@ -168,7 +168,7 @@ void PFCip::PFCip_Dekripsi() {
 		k += 2;
 	}
 	//setting plain text nya
-	for (int i = 0; i < plain.size(); i++) {
+	for (unsigned int i = 0; i < plain.size(); i++) {
 		if (plain[i] == 'X' || plain[i] == 'x')
 		{
 			plain.erase(i, 1);

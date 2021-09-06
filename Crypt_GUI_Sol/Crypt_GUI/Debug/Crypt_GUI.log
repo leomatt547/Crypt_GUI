@@ -1,7 +1,24 @@
-﻿  MyForm.cpp
-D:\git\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\MyForm.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-D:\git\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\MyForm.cpp(9,15): warning C4551: function call missing argument list
+﻿  AFC.cpp
+  AVC.cpp
+  Backend.cpp
+  ECip.cpp
+  EVC.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\EVC.cpp(70,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  FVC.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\FVC.cpp(71,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  HCip.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HCip.cpp(16,21): warning C4018: '<': signed/unsigned mismatch
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HCip.cpp(36,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  HexReader.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HexReader.cpp(110,17): warning C4244: 'initializing': conversion from 'unsigned long' to 'char', possible loss of data
+  MyForm.cpp
+  PFCip.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\PFCip.cpp(212,13): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  VCS.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\VCS.cpp(108,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Generating Code...
-  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Crypt_GUI.vcxproj -> D:\git\Crypt_GUI\Crypt_GUI_Sol\Debug\Crypt_GUI.exe
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(243): warning C4715: 'ECip::ctop': not all control paths return a value
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(211): warning C4715: 'ECip::ptoc': not all control paths return a value
+  AFC.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Crypt_GUI.vcxproj -> D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Debug\Crypt_GUI.exe

@@ -7,15 +7,13 @@ D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\EVC.cpp(70,13): warning C4244: '
   FVC.cpp
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\FVC.cpp(71,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   HCip.cpp
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HCip.cpp(16,21): warning C4018: '<': signed/unsigned mismatch
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HCip.cpp(36,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HCip.cpp(95,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   HexReader.cpp
-D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HexReader.cpp(19,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\HexReader.cpp(110,17): warning C4244: 'initializing': conversion from 'unsigned long' to 'char', possible loss of data
   MyForm.cpp
   PFCip.cpp
-D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\PFCip.cpp(21,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\PFCip.cpp(212,13): warning C4244: 'argument': conversion from 'double' to 'const unsigned __int64', possible loss of data
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\PFCip.cpp(212,13): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
   VCS.cpp
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\VCS.cpp(108,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
@@ -23,4 +21,5 @@ D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\VCS.cpp(108,13): warning C4244: 
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(243): warning C4715: 'ECip::ctop': not all control paths return a value
 D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\ECip.cpp(211): warning C4715: 'ECip::ptoc': not all control paths return a value
   AFC.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Crypt_GUI.vcxproj -> D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\x64\Release\Crypt_GUI.exe
+MSVCRT.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ)
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Release\Crypt_GUI.exe : fatal error LNK1120: 1 unresolved externals

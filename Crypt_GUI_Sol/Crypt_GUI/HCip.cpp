@@ -12,7 +12,7 @@ HCip::HCip() {
 
 vector<int> HCip::kaliMatEnkripsi(vector<vector<int>> kunci, vector<int> plain) {
 	vector<int> hasil(kunci.size(), 0);
-	for (int i = 0; i < kunci.size(); i++) {
+	for (unsigned int i = 0; i < kunci.size(); i++) {
 		for (int u = 0; u < kunci.size(); u++) {
 			hasil[i] += kunci[i][u] * plain[u];
 		}
@@ -32,7 +32,7 @@ void HCip::HCip_Enkripsi()
 	string plain = removeKarakterLain(plain2);
 	//Proses enkripsi
 	string cipher;
-	int k = 0;
+	unsigned int k = 0;
 	int faktor = floor(plain.size() / 3);
 	int sisa = plain.size() % 3;
 	for (int i = 0; i < sisa; i++) {
@@ -76,7 +76,7 @@ void HCip::HCip_Dekripsi() {
 	cipher = removeKarakterLain(cipher);
 	//Proses dekripsi
 	string plain;
-	int k = 0;
+	unsigned int k = 0;
 	int sisa = cipher.size() % 3;
 	vector<int> temp_cipher;
 	vector<int> result;

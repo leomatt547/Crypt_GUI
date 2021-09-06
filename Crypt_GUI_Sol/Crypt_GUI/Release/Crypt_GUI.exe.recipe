@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Debug\Crypt_GUI.exe</FullPath>
+      <FullPath>D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Release\Crypt_GUI.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

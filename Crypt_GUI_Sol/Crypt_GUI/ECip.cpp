@@ -249,7 +249,7 @@ void ECip::ECip_Enkripsi()
 	string plain = removeKarakterLain(plain2);
 	//Proses enkripsi
 	string cipher;
-	for (int i = 0; i < plain.size(); i++) {
+	for (unsigned int i = 0; i < plain.size(); i++) {
 		cipher.push_back(ptoc(plain[i]));
 	}
 	string temp = filterOutput(cipher, 5);
@@ -269,7 +269,7 @@ void ECip::ECip_Dekripsi() {
 	cipher = removeKarakterLain(cipher);
 	//Proses dekripsi
 	string plain;
-	for (int i = 0; i < cipher.size(); i++) {
+	for (unsigned int i = 0; i < cipher.size(); i++) {
 		plain.push_back(ctop(cipher[i]));
 	}
 	setPlain(plain);
