@@ -276,13 +276,9 @@ private: System::Windows::Forms::Label^ label100;
 private: System::Windows::Forms::Button^ button57;
 private: System::Windows::Forms::Button^ button58;
 private: System::Windows::Forms::Label^ label101;
-
-
 private: System::Windows::Forms::Label^ label103;
 private: System::Windows::Forms::Button^ button60;
 private: System::Windows::Forms::Button^ button61;
-
-
 private: System::Windows::Forms::TextBox^ textBox35;
 private: System::Windows::Forms::Label^ label105;
 private: System::Windows::Forms::TextBox^ textBox36;
@@ -294,13 +290,9 @@ private: System::Windows::Forms::Label^ label109;
 private: System::Windows::Forms::Button^ button62;
 private: System::Windows::Forms::Button^ button63;
 private: System::Windows::Forms::Label^ label110;
-
-
 private: System::Windows::Forms::Label^ label112;
 private: System::Windows::Forms::Button^ button65;
 private: System::Windows::Forms::Button^ button66;
-
-
 private: System::Windows::Forms::TextBox^ textBox38;
 private: System::Windows::Forms::TextBox^ textBox39;
 private: System::Windows::Forms::Label^ label114;
@@ -312,13 +304,9 @@ private: System::Windows::Forms::Label^ label117;
 private: System::Windows::Forms::Button^ button67;
 private: System::Windows::Forms::Button^ button68;
 private: System::Windows::Forms::Label^ label118;
-
-
 private: System::Windows::Forms::Label^ label120;
 private: System::Windows::Forms::Button^ button70;
 private: System::Windows::Forms::Button^ button71;
-
-
 private: System::Windows::Forms::TextBox^ textBox41;
 private: System::Windows::Forms::Label^ label122;
 private: System::Windows::Forms::TextBox^ textBox42;
@@ -330,13 +318,9 @@ private: System::Windows::Forms::Label^ label126;
 private: System::Windows::Forms::Button^ button72;
 private: System::Windows::Forms::Button^ button73;
 private: System::Windows::Forms::Label^ label127;
-
-
 private: System::Windows::Forms::Label^ label129;
 private: System::Windows::Forms::Button^ button75;
 private: System::Windows::Forms::Button^ button76;
-
-
 private: System::Windows::Forms::TextBox^ textBox44;
 private: System::Windows::Forms::TextBox^ textBox45;
 private: System::Windows::Forms::Label^ label131;
@@ -398,6 +382,7 @@ private: System::Windows::Forms::Label^ label96;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->StandardVC = (gcnew System::Windows::Forms::TabPage());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -2931,8 +2916,6 @@ private: System::Windows::Forms::Label^ label96;
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(121, 28);
 			this->comboBox2->TabIndex = 37;
-			this->comboBox2->SelectedItem = nullptr;
-			this->comboBox2->SelectedText = "--select--";
 			// 
 			// comboBox1
 			// 
@@ -2949,8 +2932,6 @@ private: System::Windows::Forms::Label^ label96;
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 28);
 			this->comboBox1->TabIndex = 36;
-			this->comboBox1->SelectedItem = nullptr;
-			this->comboBox1->SelectedText = "--select--";
 			// 
 			// label133
 			// 
@@ -3164,8 +3145,6 @@ private: System::Windows::Forms::Label^ label96;
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(121, 28);
 			this->comboBox3->TabIndex = 42;
-			this->comboBox3->SelectedItem = nullptr;
-			this->comboBox3->SelectedText = "--select--";
 			// 
 			// comboBox4
 			// 
@@ -3181,8 +3160,6 @@ private: System::Windows::Forms::Label^ label96;
 			this->comboBox4->Name = L"comboBox4";
 			this->comboBox4->Size = System::Drawing::Size(121, 28);
 			this->comboBox4->TabIndex = 41;
-			this->comboBox4->SelectedItem = nullptr;
-			this->comboBox4->SelectedText = "--select--";
 			// 
 			// label134
 			// 
@@ -4042,9 +4019,10 @@ private: System::Windows::Forms::Label^ label96;
 			this->ClientSize = System::Drawing::Size(1147, 690);
 			this->Controls->Add(this->label96);
 			this->Controls->Add(this->tabControl1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Crypt GUI";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabControl1->ResumeLayout(false);
 			this->StandardVC->ResumeLayout(false);

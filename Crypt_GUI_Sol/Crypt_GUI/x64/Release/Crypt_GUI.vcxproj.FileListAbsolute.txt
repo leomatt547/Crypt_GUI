@@ -1,0 +1,3 @@
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\x64\Release\Crypt_GUI.vcxproj.AssemblyReference.cache
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\x64\Release\CryptGUI.MyForm.resources
+D:\leo's file\Crypt_GUI\Crypt_GUI_Sol\Crypt_GUI\x64\Release\Crypt_GUI.vcxproj.GenerateResource.cache
