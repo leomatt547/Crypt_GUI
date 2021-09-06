@@ -32,22 +32,6 @@ void VCS::VCS_Enkripsi()
 
 void VCS::VCS_Enkripsi_File()
 {
-	/*string plain2 = getPlain();
-	//Menyelaraskan kunci dengan panjang Plain text
-	string kunci = generateKunci(plain, this->getKunci());
-	string tampungan2 = "";
-	/for (int i = 0; i < (int)plain.size(); i++) {
-		if (plain[i] >= 'A' && plain[i] <= 'Z') {
-			int p = charToInt(plain[i]);
-			int k = charToInt(kunci[i]);
-			int c = (p + k) % 26;
-			char cnya = intToChar(c);
-			tampungan2.push_back(toupper(cnya));
-		}
-		else {
-			tampungan2.push_back(plain[i]);
-		}
-	}*/
 	string cipher = getCipher();
 	setFile(cipher);
 	//setFile(tampungan2);
@@ -67,7 +51,6 @@ void VCS::VCS_Dekripsi() {
 			c += 26;
 		}
 		int p = (c - k) % 26;
-		//setCipherFile(static_cast<string>(to_string(p)));
 		char pnya = intToChar(p, true);
 		tampungan2.push_back(pnya);
 	}
@@ -75,26 +58,6 @@ void VCS::VCS_Dekripsi() {
 }
 
 void VCS::VCS_Dekripsi_File() {
-	/*
-	string cipher2 = getCipher();
-	//Remove karakter non-alphabetic
-	string cipher = removeKarakterLain(cipher2);
-	//Menyelaraskan kunci dengan panjang Plain text
-	string kunci = generateKunci(cipher, this->getKunci());
-	string tampungan2 = "";
-	for (int i = 0; i < (int)cipher.size(); i++) {
-		int c = charToInt(cipher[i]);
-		int k = charToInt(kunci[i]);
-		if (c - k < 0) {
-			c += 26;
-		}
-		int p = (c - k) % 26;
-		//setCipherFile(static_cast<string>(to_string(p)));
-		char pnya = intToChar(p);
-		tampungan2.push_back(pnya);
-	}
-	setFile(tampungan2);
-	*/
 	string plain = getPlain();
 	setFile(plain);
 }
@@ -122,4 +85,3 @@ void VCS::setPlain(string _plain){this->plain = _plain;}
 void VCS::setKunci(string _kunci) { this->kunci = removeKarakterLain(_kunci); }
 void VCS::setCipher(string _cipher) { this->cipher = _cipher; }
 void VCS::setFile(string _file) { this->file = _file; }
-
